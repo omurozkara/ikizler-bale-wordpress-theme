@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dijitalu/public_html/wp-content/themes/ikizler-bale-wordpress-theme
+    - export DEPLOYPATH=/home/dijitalu/ozelikizlerbalekursu.com/wp-content/themes/ikizler-bale-wordpress-theme
     - /bin/mkdir -p 
     - /bin/cp -R assets 
     - /bin/cp -R inc 
