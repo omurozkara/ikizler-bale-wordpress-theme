@@ -333,28 +333,7 @@ if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 		$email     = ikizler_bale_get_option( 'email', 'info@ozelikizlerbalekursu.com' );
 		$address   = ikizler_bale_get_option( 'address', 'Adres bilgisi Faz 3 ayarlarindan guncellenebilir.' );
 		$maps_url  = ikizler_bale_get_option( 'maps_url' );
-		$whatsapp  = ikizler_bale_get_option( 'whatsapp_url' );
-		$instagram = ikizler_bale_get_option( 'instagram_url' );
-		$facebook  = ikizler_bale_get_option( 'facebook_url' );
-		$youtube   = ikizler_bale_get_option( 'youtube_url' );
-		$socials   = array();
 		$phone_url = ikizler_bale_get_phone_href( $phone );
-
-		if ( $whatsapp ) {
-			$socials[] = sprintf( '<a href="%s">WhatsApp</a>', esc_url( $whatsapp ) );
-		}
-
-		if ( $instagram ) {
-			$socials[] = sprintf( '<a href="%s">Instagram</a>', esc_url( $instagram ) );
-		}
-
-		if ( $facebook ) {
-			$socials[] = sprintf( '<a href="%s">Facebook</a>', esc_url( $facebook ) );
-		}
-
-		if ( $youtube ) {
-			$socials[] = sprintf( '<a href="%s">YouTube</a>', esc_url( $youtube ) );
-		}
 
 		ob_start();
 		?>
@@ -365,13 +344,43 @@ if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 			<?php if ( $maps_url ) : ?>
 				<p class="has-blush-color has-text-color has-sm-font-size"><a href="<?php echo esc_url( $maps_url ); ?>">Haritada Goruntule</a></p>
 			<?php endif; ?>
-			<?php if ( ! empty( $socials ) ) : ?>
-				<p class="has-blush-color has-text-color has-sm-font-size"><?php echo wp_kses_post( implode( ' | ', $socials ) ); ?></p>
-			<?php endif; ?>
 		</div>
 		<?php
 
 		return (string) ob_get_clean();
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_render_footer_social_block' ) ) {
+	/**
+	 * Render footer social links block.
+	 *
+	 * @return string
+	 */
+	function ikizler_bale_render_footer_social_block() {
+		$links = array(
+			'WhatsApp'  => ikizler_bale_get_option( 'whatsapp_url' ),
+			'Instagram' => ikizler_bale_get_option( 'instagram_url' ),
+			'Facebook'  => ikizler_bale_get_option( 'facebook_url' ),
+			'YouTube'   => ikizler_bale_get_option( 'youtube_url' ),
+		);
+		$items = array();
+
+		foreach ( $links as $label => $url ) {
+			if ( $url ) {
+				$items[] = sprintf(
+					'<p class="has-blush-color has-text-color has-sm-font-size"><a href="%1$s">%2$s</a></p>',
+					esc_url( $url ),
+					esc_html( $label )
+				);
+			}
+		}
+
+		if ( empty( $items ) ) {
+			return '<p class="has-blush-color has-text-color has-sm-font-size">Sosyal baglantilar Tema Ayarlari ekranindan guncellenebilir.</p>';
+		}
+
+		return '<div class="wp-block-group ikizler-footer-social">' . wp_kses_post( implode( '', $items ) ) . '</div>';
 	}
 }
 

@@ -46,6 +46,7 @@ if ( ! function_exists( 'ikizler_bale_register_dynamic_blocks' ) ) {
 			'ikizler-bale/contact-info'   => 'ikizler_bale_render_contact_info_block',
 			'ikizler-bale/footer-meta'    => 'ikizler_bale_render_footer_meta_block',
 			'ikizler-bale/footer-text'    => 'ikizler_bale_render_footer_text_block',
+			'ikizler-bale/footer-social'  => 'ikizler_bale_render_footer_social_block',
 			'ikizler-bale/topbar-text'    => 'ikizler_bale_render_topbar_text_block',
 			'ikizler-bale/header-actions' => 'ikizler_bale_render_header_actions_block',
 			'ikizler-bale/brand-lockup'   => 'ikizler_bale_render_brand_lockup_block',

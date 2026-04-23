@@ -78,13 +78,13 @@
 				"pill": "999px"
 			},
 			"spacing": {
-				"content": "min(1280px, calc(100vw - 48px))",
-				"wide": "min(1440px, calc(100vw - 48px))"
+				"content": "min(1320px, calc(100vw - 48px))",
+				"wide": "min(1540px, calc(100vw - 48px))"
 			}
 		},
 		"layout": {
-			"contentSize": "880px",
-			"wideSize": "1320px"
+			"contentSize": "920px",
+			"wideSize": "1380px"
 		},
 		"shadow": {
 			"defaultPresets": false,
@@ -138,12 +138,12 @@
 				},
 				{
 					"slug": "xl",
-					"size": "6.75rem",
+					"size": "7rem",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "9.25rem",
+					"size": "9.75rem",
 					"name": "2XL"
 				}
 			],
@@ -195,12 +195,12 @@
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(3.4rem, 5vw, 5.6rem)",
+					"size": "clamp(3.6rem, 5.3vw, 5.9rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "clamp(4.2rem, 7.2vw, 7.6rem)",
+					"size": "clamp(4.5rem, 7.5vw, 8rem)",
 					"name": "2XL"
 				}
 			],
