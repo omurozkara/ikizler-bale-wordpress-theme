@@ -15,9 +15,9 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-logo, editor-styl
 body {
 	margin: 0;
 	background:
-		radial-gradient(circle at top left, rgba(212, 182, 205, 0.34), transparent 28%),
-		radial-gradient(circle at top right, rgba(183, 151, 186, 0.16), transparent 24%),
-		#f8f3f7;
+		radial-gradient(circle at top left, rgba(208, 169, 189, 0.28), transparent 28%),
+		radial-gradient(circle at top right, rgba(158, 112, 140, 0.14), transparent 22%),
+		#fbf7fb;
 }
 
 .wp-site-blocks {
@@ -28,43 +28,41 @@ a {
 	transition: color 180ms ease, opacity 180ms ease, border-color 180ms ease, background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
+.wp-element-button {
+	justify-content: center;
+	box-shadow: 0 14px 34px rgba(67, 32, 58, 0.08);
+}
+
 .wp-element-button:hover,
 .wp-element-button:focus {
 	transform: translateY(-1px);
-	box-shadow: 0 16px 34px rgba(73, 34, 66, 0.18);
+	box-shadow: 0 20px 42px rgba(67, 32, 58, 0.16);
 }
 
-.is-style-ikizler-button-outline,
-.wp-block-button.is-style-outline .wp-element-button {
+.wp-block-button.is-style-outline .wp-element-button,
+.is-style-ikizler-button-outline {
 	border: 1px solid currentColor;
 	background: transparent;
 }
 
 .ikizler-section-label {
-	letter-spacing: 0.18em;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	font-size: 0.75rem;
 	font-weight: 700;
 }
 
 .ikizler-soft-card {
-	border-radius: 34px;
-	box-shadow: 0 30px 80px rgba(58, 28, 53, 0.12);
-	border: 1px solid rgba(130, 88, 118, 0.08);
+	border-radius: 36px;
+	border: 1px solid rgba(110, 68, 95, 0.08);
+	box-shadow: 0 34px 100px rgba(57, 24, 50, 0.14);
 }
 
 .ikizler-grid-card {
 	height: 100%;
-	border-radius: 34px;
-	border: 1px solid rgba(123, 79, 109, 0.08);
-	box-shadow: 0 22px 60px rgba(54, 27, 49, 0.08);
-}
-
-.ikizler-divider {
-	width: 72px;
-	height: 1px;
-	background: currentColor;
-	opacity: 0.25;
+	border-radius: 36px;
+	border: 1px solid rgba(110, 68, 95, 0.08);
+	box-shadow: 0 24px 70px rgba(57, 24, 50, 0.08);
 }
 
 .ikizler-page-hero {
@@ -75,34 +73,69 @@ a {
 .ikizler-page-hero::after {
 	content: "";
 	position: absolute;
-	inset: auto -8% -28% auto;
-	width: 420px;
-	height: 420px;
+	inset: auto -6% -26% auto;
+	width: 440px;
+	height: 440px;
 	border-radius: 999px;
-	background: radial-gradient(circle, rgba(203, 166, 189, 0.5) 0%, rgba(203, 166, 189, 0) 72%);
+	background: radial-gradient(circle, rgba(208, 169, 189, 0.46), rgba(208, 169, 189, 0) 72%);
 	pointer-events: none;
 }
 
 .ikizler-topbar-shell {
-	backdrop-filter: blur(20px);
-	border-bottom: 1px solid rgba(123, 79, 109, 0.08);
+	backdrop-filter: blur(18px);
+	border-bottom: 1px solid rgba(152, 108, 134, 0.1);
 }
 
 .ikizler-topbar-inner {
 	min-height: 44px;
+	gap: 1rem;
+}
+
+.ikizler-topbar-inner p {
+	margin: 0;
 }
 
 .ikizler-header-shell {
-	background: rgba(248, 243, 247, 0.72);
-	backdrop-filter: blur(16px);
+	background: rgba(251, 247, 251, 0.82);
+	backdrop-filter: blur(18px);
 }
 
 .ikizler-header-inner {
-	gap: 1.5rem;
+	gap: 2rem;
 }
 
-.ikizler-brand-lockup {
+.ikizler-brand-render {
+	display: flex;
+	align-items: center;
 	gap: 1rem;
+}
+
+.ikizler-brand-render__logo .custom-logo-link,
+.ikizler-brand-render__logo img {
+	display: block;
+}
+
+.ikizler-brand-render__logo img {
+	width: 84px;
+	height: auto;
+}
+
+.ikizler-brand-render__title {
+	display: inline-block;
+	color: var(--wp--preset--color--ink);
+	font-family: var(--wp--preset--font-family--display);
+	font-size: clamp(1.45rem, 2vw, 1.9rem);
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.ikizler-brand-render__tagline {
+	margin: 0.28rem 0 0;
+	color: var(--wp--preset--color--rosewood);
+	font-size: 0.82rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 }
 
 .ikizler-main-nav {
@@ -110,24 +143,29 @@ a {
 }
 
 .ikizler-main-nav .wp-block-navigation-item__content {
-	padding: 0.2rem 0.15rem;
+	padding: 0.25rem 0.2rem;
+	color: var(--wp--preset--color--ink);
+}
+
+.ikizler-main-nav .wp-block-navigation-item__content:hover {
+	color: var(--wp--preset--color--plum);
 }
 
 .ikizler-header-actions {
 	align-items: center;
 }
 
-.ikizler-header-actions .wp-block-button:first-child .wp-element-button {
-	background: rgba(255, 255, 255, 0.7);
+.ikizler-header-actions .wp-block-button.is-style-outline .wp-element-button {
+	background: rgba(255, 255, 255, 0.64);
 }
 
 .ikizler-footer-shell {
 	position: relative;
 	overflow: hidden;
 	background:
-		radial-gradient(circle at top left, rgba(197, 155, 180, 0.18), transparent 22%),
-		radial-gradient(circle at bottom right, rgba(152, 107, 140, 0.18), transparent 24%),
-		#20141f;
+		radial-gradient(circle at top left, rgba(208, 169, 189, 0.18), transparent 22%),
+		radial-gradient(circle at bottom right, rgba(110, 68, 95, 0.24), transparent 24%),
+		#1d131c;
 }
 
 .ikizler-footer-shell a {
@@ -136,7 +174,7 @@ a {
 }
 
 .ikizler-footer-shell a:hover {
-	opacity: 0.82;
+	opacity: 0.84;
 }
 
 .ikizler-footer-columns {
@@ -145,11 +183,20 @@ a {
 
 .ikizler-footer-contact p,
 .ikizler-footer-meta p {
-	margin-block: 0.5rem;
+	margin-block: 0.55rem;
 }
 
 .ikizler-footer-bottom {
 	align-items: center;
+}
+
+.ikizler-footer-meta {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 .ikizler-hero-shell {
@@ -160,20 +207,25 @@ a {
 .ikizler-hero-shell::before {
 	content: "";
 	position: absolute;
-	inset: 12% auto auto -6%;
-	width: 360px;
-	height: 360px;
+	inset: 10% auto auto -4%;
+	width: 420px;
+	height: 420px;
 	border-radius: 999px;
-	background: radial-gradient(circle, rgba(203, 166, 189, 0.34), rgba(203, 166, 189, 0) 70%);
+	background: radial-gradient(circle, rgba(208, 169, 189, 0.3), rgba(208, 169, 189, 0) 70%);
 	pointer-events: none;
 }
 
 .ikizler-hero-copy {
-	max-width: 640px;
+	max-width: 670px;
+}
+
+.ikizler-hero-copy .wp-block-heading {
+	max-width: 11ch;
+	text-wrap: balance;
 }
 
 .ikizler-hero-copy p.has-md-font-size {
-	max-width: 54ch;
+	max-width: 56ch;
 }
 
 .ikizler-hero-audience {
@@ -183,19 +235,18 @@ a {
 .ikizler-hero-audience .wp-block-column {
 	padding: 1.2rem 1.15rem;
 	background: rgba(255, 255, 255, 0.58);
-	border: 1px solid rgba(123, 79, 109, 0.08);
-	border-radius: 24px;
-	box-shadow: 0 12px 34px rgba(54, 27, 49, 0.05);
+	border: 1px solid rgba(110, 68, 95, 0.08);
+	border-radius: 26px;
+	box-shadow: 0 12px 34px rgba(55, 26, 48, 0.05);
 }
 
 .ikizler-hero-media-card {
 	padding: 1.15rem;
-	background: rgba(255, 255, 255, 0.84);
-	border: 1px solid rgba(123, 79, 109, 0.08);
+	background: rgba(255, 255, 255, 0.88);
 }
 
 .ikizler-hero-media-card img {
-	min-height: 560px;
+	min-height: 620px;
 	object-fit: cover;
 }
 
@@ -212,20 +263,25 @@ a {
 	content: "";
 	position: absolute;
 	inset: auto -6% -18% auto;
-	width: 380px;
-	height: 380px;
+	width: 420px;
+	height: 420px;
 	border-radius: 999px;
-	background: radial-gradient(circle, rgba(203, 166, 189, 0.18), rgba(203, 166, 189, 0) 72%);
+	background: radial-gradient(circle, rgba(208, 169, 189, 0.18), rgba(208, 169, 189, 0) 72%);
 	pointer-events: none;
 }
 
+.ikizler-cta-shell .wp-block-heading {
+	max-width: 16ch;
+	margin-inline: auto;
+	text-wrap: balance;
+}
+
 .ikizler-cta-shell .wp-element-button {
-	min-width: 210px;
-	justify-content: center;
+	min-width: 220px;
 }
 
 .ikizler-cta-shell .wp-block-button.is-style-outline .wp-element-button {
-	background: rgba(255, 255, 255, 0.06);
+	background: rgba(255, 255, 255, 0.05);
 }
 
 .alignwide > .wp-block-query .wp-block-post-template {
@@ -235,29 +291,40 @@ a {
 @media (min-width: 1280px) {
 	.wp-site-blocks .alignwide,
 	.wp-site-blocks [data-align="wide"] {
-		max-width: 1280px;
+		max-width: 1300px;
 	}
 }
 
 @media (max-width: 1024px) {
 	.ikizler-hero-media-card img {
-		min-height: 420px;
+		min-height: 460px;
 	}
 }
 
 @media (max-width: 781px) {
-	.hide-mobile {
-		display: none !important;
-	}
-
-	.ikizler-header-inner,
 	.ikizler-topbar-inner,
-	.ikizler-footer-bottom {
+	.ikizler-header-inner,
+	.ikizler-footer-bottom,
+	.ikizler-footer-meta {
 		gap: 1rem;
 	}
 
+	.ikizler-main-nav {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.ikizler-brand-render__logo img {
+		width: 68px;
+	}
+
+	.ikizler-hero-copy .wp-block-heading,
+	.ikizler-cta-shell .wp-block-heading {
+		max-width: none;
+	}
+
 	.ikizler-hero-media-card img {
-		min-height: 340px;
+		min-height: 360px;
 	}
 
 	.ikizler-cta-shell .wp-element-button {

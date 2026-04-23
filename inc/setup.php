@@ -39,43 +39,26 @@ add_action( 'wp_enqueue_scripts', 'ikizler_bale_enqueue_assets' );
 
 if ( ! function_exists( 'ikizler_bale_register_dynamic_blocks' ) ) {
 	/**
-	 * Register simple server-rendered blocks for site settings output.
+	 * Register server-rendered blocks for theme-driven UI.
 	 */
 	function ikizler_bale_register_dynamic_blocks() {
-		register_block_type(
-			'ikizler-bale/contact-info',
-			array(
-				'render_callback' => 'ikizler_bale_render_contact_info_block',
-			)
+		$blocks = array(
+			'ikizler-bale/contact-info'   => 'ikizler_bale_render_contact_info_block',
+			'ikizler-bale/footer-meta'    => 'ikizler_bale_render_footer_meta_block',
+			'ikizler-bale/footer-text'    => 'ikizler_bale_render_footer_text_block',
+			'ikizler-bale/topbar-text'    => 'ikizler_bale_render_topbar_text_block',
+			'ikizler-bale/header-actions' => 'ikizler_bale_render_header_actions_block',
+			'ikizler-bale/brand-lockup'   => 'ikizler_bale_render_brand_lockup_block',
 		);
 
-		register_block_type(
-			'ikizler-bale/footer-meta',
-			array(
-				'render_callback' => 'ikizler_bale_render_footer_meta_block',
-			)
-		);
-
-		register_block_type(
-			'ikizler-bale/footer-text',
-			array(
-				'render_callback' => 'ikizler_bale_render_footer_text_block',
-			)
-		);
-
-		register_block_type(
-			'ikizler-bale/topbar-text',
-			array(
-				'render_callback' => 'ikizler_bale_render_topbar_text_block',
-			)
-		);
-
-		register_block_type(
-			'ikizler-bale/header-actions',
-			array(
-				'render_callback' => 'ikizler_bale_render_header_actions_block',
-			)
-		);
+		foreach ( $blocks as $block_name => $callback ) {
+			register_block_type(
+				$block_name,
+				array(
+					'render_callback' => $callback,
+				)
+			);
+		}
 	}
 }
 add_action( 'init', 'ikizler_bale_register_dynamic_blocks' );

@@ -9,71 +9,71 @@
 			"palette": [
 				{
 					"slug": "canvas",
-					"color": "#f8f3f7",
-					"name": "Kirik Beyaz"
+					"color": "#fbf7fb",
+					"name": "Ivory Blush"
 				},
 				{
 					"slug": "surface",
-					"color": "#efe5ef",
-					"name": "Lila Sis"
+					"color": "#f1e7f1",
+					"name": "Soft Mauve"
 				},
 				{
 					"slug": "mist",
-					"color": "#dcc8dd",
-					"name": "Pembe Lila"
+					"color": "#dcc7d8",
+					"name": "Muted Lilac"
 				},
 				{
 					"slug": "blush",
-					"color": "#cba6bd",
-					"name": "Pudra Gul"
-				},
-				{
-					"slug": "plum",
-					"color": "#7b4f6d",
-					"name": "Murdum"
+					"color": "#d0a9bd",
+					"name": "Dusty Rose"
 				},
 				{
 					"slug": "rosewood",
-					"color": "#9b6e87",
-					"name": "Gul Agaci"
+					"color": "#986c86",
+					"name": "Rosewood"
+				},
+				{
+					"slug": "plum",
+					"color": "#6e445f",
+					"name": "Plum"
 				},
 				{
 					"slug": "ink",
-					"color": "#20141f",
-					"name": "Gece Eflatun"
+					"color": "#1d131c",
+					"name": "Ink"
 				},
 				{
 					"slug": "white",
 					"color": "#ffffff",
-					"name": "Beyaz"
+					"name": "White"
 				}
 			],
 			"gradients": [
 				{
 					"slug": "hero-aura",
 					"name": "Hero Aura",
-					"gradient": "linear-gradient(135deg, #fbf7fb 0%, #f2e9f2 36%, #ebd7e4 74%, #d7bfd3 100%)"
+					"gradient": "linear-gradient(135deg, #fffafe 0%, #f7eef6 36%, #efdbe9 74%, #e3c5d9 100%)"
 				},
 				{
 					"slug": "soft-radial",
 					"name": "Soft Radial",
-					"gradient": "radial-gradient(circle at top left, #ffffff 0%, #f4ebf5 40%, #efe5ef 100%)"
+					"gradient": "radial-gradient(circle at top left, #ffffff 0%, #f6edf5 42%, #f0e5ef 100%)"
 				}
 			]
 		},
 		"custom": {
 			"radius": {
-				"soft": "34px",
+				"soft": "36px",
 				"pill": "999px"
 			},
 			"spacing": {
-				"content": "min(1220px, calc(100vw - 40px))",
-				"wide": "min(1380px, calc(100vw - 40px))"
+				"content": "min(1240px, calc(100vw - 48px))",
+				"wide": "min(1400px, calc(100vw - 48px))"
 			}
 		},
 		"layout": {
-			"contentSize": "820px",
-			"wideSize": "1240px"
+			"contentSize": "840px",
+			"wideSize": "1260px"
 		},
 		"shadow": {
 			"defaultPresets": false,
@@ -81,12 +81,12 @@
 				{
 					"name": "Soft",
 					"slug": "soft",
-					"shadow": "0 24px 60px rgba(56, 28, 52, 0.10)"
+					"shadow": "0 26px 60px rgba(69, 32, 59, 0.10)"
 				},
 				{
 					"name": "Lifted",
 					"slug": "lifted",
-					"shadow": "0 34px 90px rgba(47, 22, 44, 0.16)"
+					"shadow": "0 36px 100px rgba(62, 29, 54, 0.16)"
 				}
 			]
 		},
@@ -117,17 +117,17 @@
 				},
 				{
 					"slug": "lg",
-					"size": "4rem",
+					"size": "4.5rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "6rem",
+					"size": "6.5rem",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "8.5rem",
+					"size": "9rem",
 					"name": "2XL"
 				}
 			],
@@ -174,17 +174,17 @@
 				},
 				{
 					"slug": "lg",
-					"size": "1.45rem",
+					"size": "1.5rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(2.9rem, 5vw, 4.9rem)",
+					"size": "clamp(3.2rem, 5vw, 5.2rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "clamp(4rem, 8vw, 6.9rem)",
+					"size": "clamp(4.4rem, 8vw, 7.2rem)",
 					"name": "2XL"
 				}
 			],
@@ -198,15 +198,15 @@
 				"spacing": {
 					"padding": {
 						"top": "1rem",
-						"right": "1.65rem",
+						"right": "1.8rem",
 						"bottom": "1rem",
-						"left": "1.65rem"
+						"left": "1.8rem"
 					}
 				},
 				"typography": {
 					"fontSize": "0.95rem",
 					"fontWeight": "700",
-					"letterSpacing": "0.02em"
+					"letterSpacing": "0.03em"
 				}
 			},
 			"core/navigation": {
@@ -218,14 +218,6 @@
 			"core/post-title": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)"
-				}
-			},
-			"core/site-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--display)",
-					"fontSize": "1.55rem",
-					"fontWeight": "600",
-					"letterSpacing": "0.02em"
 				}
 			}
 		},
@@ -247,14 +239,14 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
 					"fontWeight": "600",
-					"lineHeight": "0.92"
+					"lineHeight": "0.9"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
 					"fontWeight": "600",
-					"lineHeight": "0.96"
+					"lineHeight": "0.94"
 				}
 			},
 			"h3": {
@@ -277,15 +269,15 @@
 		"spacing": {
 			"blockGap": "1.5rem",
 			"padding": {
-				"right": "20px",
-				"left": "20px"
+				"right": "24px",
+				"left": "24px"
 			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--body)",
 			"fontSize": "1rem",
 			"fontWeight": "400",
-			"lineHeight": "1.75"
+			"lineHeight": "1.78"
 		},
 		"blocks": {
 			"core/buttons": {
@@ -293,14 +285,9 @@
 					"blockGap": "0.95rem"
 				}
 			},
-			"core/group": {
-				"spacing": {
-					"blockGap": "1.5rem"
-				}
-			},
 			"core/image": {
 				"border": {
-					"radius": "34px"
+					"radius": "36px"
 				}
 			},
 			"core/navigation-link": {
@@ -310,12 +297,7 @@
 			},
 			"core/post-featured-image": {
 				"border": {
-					"radius": "34px"
-				}
-			},
-			"core/query-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--display)"
+					"radius": "36px"
 				}
 			},
 			"core/separator": {

@@ -37,6 +37,40 @@ if ( ! function_exists( 'ikizler_bale_get_option' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ikizler_bale_get_brand_name' ) ) {
+	/**
+	 * Return a safe brand name instead of weak WordPress defaults.
+	 *
+	 * @return string
+	 */
+	function ikizler_bale_get_brand_name() {
+		$name = trim( wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES ) );
+
+		if ( '' === $name || in_array( strtolower( $name ), array( 'my blog', 'site title', 'wordpress', 'just another wordpress site' ), true ) ) {
+			return 'Ozel Ikizler Bale Akademi';
+		}
+
+		return $name;
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_get_brand_tagline' ) ) {
+	/**
+	 * Return a refined fallback tagline.
+	 *
+	 * @return string
+	 */
+	function ikizler_bale_get_brand_tagline() {
+		$tagline = trim( wp_specialchars_decode( get_bloginfo( 'description' ), ENT_QUOTES ) );
+
+		if ( '' === $tagline || 'just another wordpress site' === strtolower( $tagline ) ) {
+			return 'Premium bale egitiminde zarafet, disiplin ve guven';
+		}
+
+		return $tagline;
+	}
+}
+
 if ( ! function_exists( 'ikizler_bale_find_page_url' ) ) {
 	/**
 	 * Find the first published page URL by slug candidates.
@@ -110,24 +144,6 @@ if ( ! function_exists( 'ikizler_bale_resolve_url' ) ) {
 	}
 }
 
-if ( ! function_exists( 'ikizler_bale_get_theme_link' ) ) {
-	/**
-	 * Return theme option URL with fallback path.
-	 *
-	 * @param string $key Option key.
-	 * @param string $fallback_path Optional local fallback path.
-	 * @return string
-	 */
-	function ikizler_bale_get_theme_link( $key, $fallback_path = '' ) {
-		return ikizler_bale_resolve_url(
-			ikizler_bale_get_option( $key ),
-			array(
-				'fallback_path' => $fallback_path,
-			)
-		);
-	}
-}
-
 if ( ! function_exists( 'ikizler_bale_get_contact_url' ) ) {
 	/**
 	 * Resolve the best contact destination.
@@ -139,9 +155,9 @@ if ( ! function_exists( 'ikizler_bale_get_contact_url' ) ) {
 		return ikizler_bale_resolve_url(
 			$preferred_url,
 			array(
-				'page_slugs'      => array( 'iletisim', 'contact' ),
-				'theme_option'    => 'whatsapp_url',
-				'fallback_path'   => '/',
+				'page_slugs'    => array( 'iletisim', 'contact' ),
+				'theme_option'  => 'whatsapp_url',
+				'fallback_path' => '/',
 			)
 		);
 	}
@@ -263,6 +279,33 @@ if ( ! function_exists( 'ikizler_bale_get_front_page_image' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ikizler_bale_render_brand_lockup_block' ) ) {
+	/**
+	 * Render a brand-safe logo lockup.
+	 *
+	 * @return string
+	 */
+	function ikizler_bale_render_brand_lockup_block() {
+		$home_url = home_url( '/' );
+		$logo     = has_custom_logo() ? get_custom_logo() : '';
+
+		ob_start();
+		?>
+		<div class="wp-block-group ikizler-brand-render">
+			<?php if ( $logo ) : ?>
+				<div class="ikizler-brand-render__logo"><?php echo wp_kses_post( $logo ); ?></div>
+			<?php endif; ?>
+			<div class="ikizler-brand-render__text">
+				<a class="ikizler-brand-render__title" href="<?php echo esc_url( $home_url ); ?>"><?php echo esc_html( ikizler_bale_get_brand_name() ); ?></a>
+				<p class="ikizler-brand-render__tagline"><?php echo esc_html( ikizler_bale_get_brand_tagline() ); ?></p>
+			</div>
+		</div>
+		<?php
+
+		return (string) ob_get_clean();
+	}
+}
+
 if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 	/**
 	 * Render footer contact info block.
@@ -376,7 +419,7 @@ if ( ! function_exists( 'ikizler_bale_render_header_actions_block' ) ) {
 		$trial_url   = ikizler_bale_get_trial_lesson_url();
 
 		return sprintf(
-			'<div class="wp-block-buttons ikizler-header-actions"><div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-ink-color has-text-color has-border-color has-blush-border-color wp-element-button" href="%1$s">Iletisim</a></div><div class="wp-block-button"><a class="wp-block-button__link has-white-color has-ink-background-color has-text-color has-background wp-element-button" href="%2$s">Deneme Dersi</a></div></div>',
+			'<div class="wp-block-buttons ikizler-header-actions"><div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-ink-color has-text-color has-border-color has-mist-border-color wp-element-button" href="%1$s">Iletisim</a></div><div class="wp-block-button"><a class="wp-block-button__link has-white-color has-plum-background-color has-text-color has-background wp-element-button" href="%2$s">Deneme Dersi</a></div></div>',
 			esc_url( $contact_url ),
 			esc_url( $trial_url )
 		);
