@@ -56,6 +56,13 @@ if ( ! function_exists( 'ikizler_bale_register_theme_settings' ) ) {
 			'ikizler-bale-theme-settings'
 		);
 
+		add_settings_section(
+			'ikizler_bale_brand_section',
+			'Ek Kurumsal Metinler',
+			'__return_false',
+			'ikizler-bale-theme-settings'
+		);
+
 		$fields = array(
 			'phone'            => array( 'Telefon', 'text', 'ikizler_bale_contact_section', 'Ornek: +90 5xx xxx xx xx' ),
 			'email'            => array( 'E-posta', 'email', 'ikizler_bale_contact_section', 'Kurumsal iletisim adresi' ),
@@ -68,6 +75,7 @@ if ( ! function_exists( 'ikizler_bale_register_theme_settings' ) ) {
 			'footer_text'      => array( 'Footer Kisa Metni', 'textarea', 'ikizler_bale_footer_section', 'Alt alanda markayi anlatan kisa metin' ),
 			'footer_copyright' => array( 'Footer Telif Metni', 'text', 'ikizler_bale_footer_section', 'Ornek: (c) 2026 Ozel Ikizler Bale Akademi' ),
 			'footer_note'      => array( 'Footer Alt Notu', 'text', 'ikizler_bale_footer_section', 'Kisa teknik veya kurumsal not' ),
+			'topbar_text'      => array( 'Ust Bilgi Metni', 'text', 'ikizler_bale_brand_section', 'Header ust satirinda gorunen kisa kurumsal metin' ),
 		);
 
 		foreach ( $fields as $key => $field ) {
@@ -92,16 +100,21 @@ if ( ! function_exists( 'ikizler_bale_sanitize_theme_settings' ) ) {
 	/**
 	 * Sanitize settings values.
 	 *
-	 * @param array<string, mixed> $input Raw input.
+	 * @param mixed $input Raw input.
 	 * @return array<string, string>
 	 */
 	function ikizler_bale_sanitize_theme_settings( $input ) {
+		if ( ! is_array( $input ) ) {
+			return array();
+		}
+
 		$output = array();
 
 		$text_fields = array(
 			'phone',
 			'footer_copyright',
 			'footer_note',
+			'topbar_text',
 		);
 
 		$url_fields = array(
@@ -176,6 +189,7 @@ if ( ! function_exists( 'ikizler_bale_render_theme_settings_page' ) ) {
 		<div class="wrap">
 			<h1>Tema Ayarlari</h1>
 			<p>Bu alan; iletisim bilgileri, sosyal medya ve footer iceriklerini sade bir sekilde yonetmek icin hazirlandi.</p>
+			<?php settings_errors(); ?>
 			<form action="options.php" method="post">
 				<?php
 				settings_fields( 'ikizler_bale_theme_settings_group' );

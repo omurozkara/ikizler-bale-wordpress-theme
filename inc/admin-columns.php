@@ -15,6 +15,7 @@ if ( ! function_exists( 'ikizler_bale_register_admin_columns' ) ) {
 		foreach ( $post_types as $post_type ) {
 			add_filter( "manage_{$post_type}_posts_columns", 'ikizler_bale_filter_columns' );
 			add_action( "manage_{$post_type}_posts_custom_column", 'ikizler_bale_render_columns', 10, 2 );
+			add_filter( "manage_edit-{$post_type}_sortable_columns", 'ikizler_bale_sortable_columns' );
 		}
 	}
 }
@@ -28,7 +29,7 @@ if ( ! function_exists( 'ikizler_bale_filter_columns' ) ) {
 	 * @return array<string, string>
 	 */
 	function ikizler_bale_filter_columns( $columns ) {
-		$new_columns = array(
+		return array(
 			'cb'             => $columns['cb'],
 			'title'          => 'Baslik',
 			'featured_image' => 'Gorsel',
@@ -36,8 +37,20 @@ if ( ! function_exists( 'ikizler_bale_filter_columns' ) ) {
 			'menu_order'     => 'Sira',
 			'date'           => 'Tarih',
 		);
+	}
+}
 
-		return $new_columns;
+if ( ! function_exists( 'ikizler_bale_sortable_columns' ) ) {
+	/**
+	 * Make useful columns sortable.
+	 *
+	 * @param array<string, string> $columns Sortable columns.
+	 * @return array<string, string>
+	 */
+	function ikizler_bale_sortable_columns( $columns ) {
+		$columns['menu_order'] = 'menu_order';
+
+		return $columns;
 	}
 }
 
@@ -53,7 +66,7 @@ if ( ! function_exists( 'ikizler_bale_render_columns' ) ) {
 			if ( has_post_thumbnail( $post_id ) ) {
 				echo get_the_post_thumbnail( $post_id, array( 56, 56 ) );
 			} else {
-				echo '—';
+				echo '-';
 			}
 		}
 
@@ -81,8 +94,27 @@ if ( ! function_exists( 'ikizler_bale_render_columns' ) ) {
 
 			if ( isset( $map[ $post_type ] ) ) {
 				$value = get_field( $map[ $post_type ], $post_id );
-				echo $value ? esc_html( is_string( $value ) ? $value : wp_json_encode( $value ) ) : '—';
+				echo $value ? esc_html( is_string( $value ) ? $value : wp_json_encode( $value ) ) : '-';
 			}
 		}
 	}
 }
+
+if ( ! function_exists( 'ikizler_bale_admin_orderby' ) ) {
+	/**
+	 * Allow sorting by menu order on CPT lists.
+	 *
+	 * @param WP_Query $query Query object.
+	 */
+	function ikizler_bale_admin_orderby( $query ) {
+		if ( ! is_admin() || ! $query->is_main_query() ) {
+			return;
+		}
+
+		if ( 'menu_order' === $query->get( 'orderby' ) ) {
+			$query->set( 'orderby', 'menu_order title' );
+			$query->set( 'order', 'ASC' );
+		}
+	}
+}
+add_action( 'pre_get_posts', 'ikizler_bale_admin_orderby' );

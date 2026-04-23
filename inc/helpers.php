@@ -37,6 +37,188 @@ if ( ! function_exists( 'ikizler_bale_get_option' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ikizler_bale_find_page_url' ) ) {
+	/**
+	 * Find the first published page URL by slug candidates.
+	 *
+	 * @param array<int, string> $slugs Page slugs.
+	 * @return string
+	 */
+	function ikizler_bale_find_page_url( array $slugs ) {
+		foreach ( $slugs as $slug ) {
+			$page = get_page_by_path( $slug );
+
+			if ( $page instanceof WP_Post && 'publish' === $page->post_status ) {
+				return (string) get_permalink( $page );
+			}
+		}
+
+		return '';
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_resolve_url' ) ) {
+	/**
+	 * Resolve a safe URL using sensible priority.
+	 *
+	 * @param string $preferred_url Admin-provided URL.
+	 * @param array  $args Resolution arguments.
+	 * @return string
+	 */
+	function ikizler_bale_resolve_url( $preferred_url = '', array $args = array() ) {
+		if ( $preferred_url ) {
+			return esc_url_raw( $preferred_url );
+		}
+
+		if ( ! empty( $args['page_slugs'] ) ) {
+			$page_url = ikizler_bale_find_page_url( (array) $args['page_slugs'] );
+
+			if ( $page_url ) {
+				return $page_url;
+			}
+		}
+
+		if ( ! empty( $args['post_type_archive'] ) && post_type_exists( $args['post_type_archive'] ) ) {
+			$archive_url = get_post_type_archive_link( $args['post_type_archive'] );
+
+			if ( $archive_url ) {
+				return (string) $archive_url;
+			}
+		}
+
+		if ( ! empty( $args['theme_option'] ) ) {
+			$theme_url = ikizler_bale_get_option( (string) $args['theme_option'] );
+
+			if ( $theme_url ) {
+				return $theme_url;
+			}
+		}
+
+		if ( ! empty( $args['secondary_theme_option'] ) ) {
+			$theme_url = ikizler_bale_get_option( (string) $args['secondary_theme_option'] );
+
+			if ( $theme_url ) {
+				return $theme_url;
+			}
+		}
+
+		if ( ! empty( $args['fallback_path'] ) ) {
+			return home_url( (string) $args['fallback_path'] );
+		}
+
+		return home_url( '/' );
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_get_theme_link' ) ) {
+	/**
+	 * Return theme option URL with fallback path.
+	 *
+	 * @param string $key Option key.
+	 * @param string $fallback_path Optional local fallback path.
+	 * @return string
+	 */
+	function ikizler_bale_get_theme_link( $key, $fallback_path = '' ) {
+		return ikizler_bale_resolve_url(
+			ikizler_bale_get_option( $key ),
+			array(
+				'fallback_path' => $fallback_path,
+			)
+		);
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_get_contact_url' ) ) {
+	/**
+	 * Resolve the best contact destination.
+	 *
+	 * @param string $preferred_url Preferred custom URL.
+	 * @return string
+	 */
+	function ikizler_bale_get_contact_url( $preferred_url = '' ) {
+		return ikizler_bale_resolve_url(
+			$preferred_url,
+			array(
+				'page_slugs'      => array( 'iletisim', 'contact' ),
+				'theme_option'    => 'whatsapp_url',
+				'fallback_path'   => '/',
+			)
+		);
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_get_trial_lesson_url' ) ) {
+	/**
+	 * Resolve trial lesson CTA.
+	 *
+	 * @param string $preferred_url Preferred custom URL.
+	 * @return string
+	 */
+	function ikizler_bale_get_trial_lesson_url( $preferred_url = '' ) {
+		$url = ikizler_bale_resolve_url(
+			$preferred_url,
+			array(
+				'page_slugs'             => array( 'deneme-dersi-basvuru', 'deneme-dersi', 'on-kayit-basvuru' ),
+				'theme_option'           => 'whatsapp_url',
+				'secondary_theme_option' => 'maps_url',
+			)
+		);
+
+		if ( $url && home_url( '/' ) !== $url ) {
+			return $url;
+		}
+
+		return ikizler_bale_get_contact_url();
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_get_programs_url' ) ) {
+	/**
+	 * Resolve programs URL.
+	 *
+	 * @param string $preferred_url Preferred custom URL.
+	 * @return string
+	 */
+	function ikizler_bale_get_programs_url( $preferred_url = '' ) {
+		$url = ikizler_bale_resolve_url(
+			$preferred_url,
+			array(
+				'page_slugs'        => array( 'egitimler', 'bale-dersleri' ),
+				'post_type_archive' => 'egitim',
+			)
+		);
+
+		if ( $url && home_url( '/' ) !== $url ) {
+			return $url;
+		}
+
+		return home_url( '/' );
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_get_schedule_url' ) ) {
+	/**
+	 * Resolve weekly schedule URL.
+	 *
+	 * @param string $preferred_url Preferred custom URL.
+	 * @return string
+	 */
+	function ikizler_bale_get_schedule_url( $preferred_url = '' ) {
+		$url = ikizler_bale_resolve_url(
+			$preferred_url,
+			array(
+				'page_slugs' => array( 'haftalik-program', 'program' ),
+			)
+		);
+
+		if ( $url && home_url( '/' ) !== $url ) {
+			return $url;
+		}
+
+		return ikizler_bale_get_contact_url();
+	}
+}
+
 if ( ! function_exists( 'ikizler_bale_get_front_page_field' ) ) {
 	/**
 	 * Read an ACF field from the selected front page.
@@ -62,6 +244,25 @@ if ( ! function_exists( 'ikizler_bale_get_front_page_field' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ikizler_bale_get_front_page_image' ) ) {
+	/**
+	 * Return normalized image data for ACF image fields.
+	 *
+	 * @param string $field_name Field name.
+	 * @param string $fallback_url Fallback image URL.
+	 * @param string $fallback_alt Fallback alt text.
+	 * @return array<string, string>
+	 */
+	function ikizler_bale_get_front_page_image( $field_name, $fallback_url, $fallback_alt ) {
+		$image = ikizler_bale_get_front_page_field( $field_name, array() );
+
+		return array(
+			'url' => is_array( $image ) && ! empty( $image['url'] ) ? (string) $image['url'] : $fallback_url,
+			'alt' => is_array( $image ) && ! empty( $image['alt'] ) ? (string) $image['alt'] : $fallback_alt,
+		);
+	}
+}
+
 if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 	/**
 	 * Render footer contact info block.
@@ -75,28 +276,37 @@ if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 		$maps_url  = ikizler_bale_get_option( 'maps_url' );
 		$whatsapp  = ikizler_bale_get_option( 'whatsapp_url' );
 		$instagram = ikizler_bale_get_option( 'instagram_url' );
+		$facebook  = ikizler_bale_get_option( 'facebook_url' );
+		$youtube   = ikizler_bale_get_option( 'youtube_url' );
+		$socials   = array();
+
+		if ( $whatsapp ) {
+			$socials[] = sprintf( '<a href="%s">WhatsApp</a>', esc_url( $whatsapp ) );
+		}
+
+		if ( $instagram ) {
+			$socials[] = sprintf( '<a href="%s">Instagram</a>', esc_url( $instagram ) );
+		}
+
+		if ( $facebook ) {
+			$socials[] = sprintf( '<a href="%s">Facebook</a>', esc_url( $facebook ) );
+		}
+
+		if ( $youtube ) {
+			$socials[] = sprintf( '<a href="%s">YouTube</a>', esc_url( $youtube ) );
+		}
 
 		ob_start();
 		?>
-		<div class="wp-block-group">
+		<div class="wp-block-group ikizler-footer-contact">
 			<p class="has-blush-color has-text-color has-sm-font-size"><strong>Telefon:</strong> <?php echo esc_html( $phone ); ?></p>
 			<p class="has-blush-color has-text-color has-sm-font-size"><strong>E-posta:</strong> <a href="mailto:<?php echo esc_attr( antispambot( $email ) ); ?>"><?php echo esc_html( antispambot( $email ) ); ?></a></p>
 			<p class="has-blush-color has-text-color has-sm-font-size"><strong>Adres:</strong> <?php echo esc_html( $address ); ?></p>
 			<?php if ( $maps_url ) : ?>
 				<p class="has-blush-color has-text-color has-sm-font-size"><a href="<?php echo esc_url( $maps_url ); ?>">Haritada Goruntule</a></p>
 			<?php endif; ?>
-			<?php if ( $whatsapp || $instagram ) : ?>
-				<p class="has-blush-color has-text-color has-sm-font-size">
-					<?php if ( $whatsapp ) : ?>
-						<a href="<?php echo esc_url( $whatsapp ); ?>">WhatsApp</a>
-					<?php endif; ?>
-					<?php if ( $whatsapp && $instagram ) : ?>
-						<span> | </span>
-					<?php endif; ?>
-					<?php if ( $instagram ) : ?>
-						<a href="<?php echo esc_url( $instagram ); ?>">Instagram</a>
-					<?php endif; ?>
-				</p>
+			<?php if ( ! empty( $socials ) ) : ?>
+				<p class="has-blush-color has-text-color has-sm-font-size"><?php echo wp_kses_post( implode( ' | ', $socials ) ); ?></p>
 			<?php endif; ?>
 		</div>
 		<?php
@@ -116,7 +326,7 @@ if ( ! function_exists( 'ikizler_bale_render_footer_meta_block' ) ) {
 		$note      = ikizler_bale_get_option( 'footer_note', 'Block theme altyapisi ile hazirlandi.' );
 
 		return sprintf(
-			'<div class="wp-block-group"><p class="has-blush-color has-text-color has-xs-font-size">%1$s</p><p class="has-blush-color has-text-color has-xs-font-size">%2$s</p></div>',
+			'<div class="wp-block-group ikizler-footer-meta"><p class="has-blush-color has-text-color has-xs-font-size">%1$s</p><p class="has-blush-color has-text-color has-xs-font-size">%2$s</p></div>',
 			esc_html( $copyright ),
 			esc_html( $note )
 		);
@@ -135,6 +345,40 @@ if ( ! function_exists( 'ikizler_bale_render_footer_text_block' ) ) {
 		return sprintf(
 			'<p class="has-blush-color has-text-color has-sm-font-size">%s</p>',
 			esc_html( $text )
+		);
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_render_topbar_text_block' ) ) {
+	/**
+	 * Render topbar text.
+	 *
+	 * @return string
+	 */
+	function ikizler_bale_render_topbar_text_block() {
+		$text = ikizler_bale_get_option( 'topbar_text', 'Cocuk, genc ve yetiskin ogrenciler icin premium bale egitimi' );
+
+		return sprintf(
+			'<p class="has-rosewood-color has-text-color has-xs-font-size">%s</p>',
+			esc_html( $text )
+		);
+	}
+}
+
+if ( ! function_exists( 'ikizler_bale_render_header_actions_block' ) ) {
+	/**
+	 * Render header action buttons with safe links.
+	 *
+	 * @return string
+	 */
+	function ikizler_bale_render_header_actions_block() {
+		$contact_url = ikizler_bale_get_contact_url();
+		$trial_url   = ikizler_bale_get_trial_lesson_url();
+
+		return sprintf(
+			'<div class="wp-block-buttons ikizler-header-actions"><div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-ink-color has-text-color has-border-color has-blush-border-color wp-element-button" href="%1$s">Iletisim</a></div><div class="wp-block-button"><a class="wp-block-button__link has-white-color has-ink-background-color has-text-color has-background wp-element-button" href="%2$s">Deneme Dersi</a></div></div>',
+			esc_url( $contact_url ),
+			esc_url( $trial_url )
 		);
 	}
 }

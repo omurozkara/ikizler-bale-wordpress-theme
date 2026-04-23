@@ -9,33 +9,38 @@
 			"palette": [
 				{
 					"slug": "canvas",
-					"color": "#fbf7f2",
-					"name": "Fildisi"
+					"color": "#f8f3f7",
+					"name": "Kirik Beyaz"
 				},
 				{
 					"slug": "surface",
-					"color": "#f3ece4",
-					"name": "Sampanya"
+					"color": "#efe5ef",
+					"name": "Lila Sis"
+				},
+				{
+					"slug": "mist",
+					"color": "#dcc8dd",
+					"name": "Pembe Lila"
 				},
 				{
 					"slug": "blush",
-					"color": "#dbc7c4",
-					"name": "Pudra"
+					"color": "#cba6bd",
+					"name": "Pudra Gul"
+				},
+				{
+					"slug": "plum",
+					"color": "#7b4f6d",
+					"name": "Murdum"
 				},
 				{
 					"slug": "rosewood",
-					"color": "#8a6365",
-					"name": "Gul Kurusu"
+					"color": "#9b6e87",
+					"name": "Gul Agaci"
 				},
 				{
 					"slug": "ink",
-					"color": "#24191c",
-					"name": "Antrasit"
-				},
-				{
-					"slug": "gold",
-					"color": "#b79a6a",
-					"name": "Altin"
+					"color": "#20141f",
+					"name": "Gece Eflatun"
 				},
 				{
 					"slug": "white",
@@ -45,34 +50,30 @@
 			],
 			"gradients": [
 				{
-					"slug": "hero-glow",
-					"name": "Hero Glow",
-					"gradient": "linear-gradient(135deg, #fbf7f2 0%, #f3ece4 42%, #dbc7c4 100%)"
+					"slug": "hero-aura",
+					"name": "Hero Aura",
+					"gradient": "linear-gradient(135deg, #fbf7fb 0%, #f2e9f2 36%, #ebd7e4 74%, #d7bfd3 100%)"
 				},
 				{
 					"slug": "soft-radial",
 					"name": "Soft Radial",
-					"gradient": "radial-gradient(circle at top left, #ffffff 0%, #f3ece4 38%, #fbf7f2 100%)"
+					"gradient": "radial-gradient(circle at top left, #ffffff 0%, #f4ebf5 40%, #efe5ef 100%)"
 				}
 			]
 		},
 		"custom": {
 			"radius": {
-				"soft": "28px",
+				"soft": "34px",
 				"pill": "999px"
 			},
-			"shadow": {
-				"soft": "0 24px 60px rgba(38, 29, 31, 0.08)",
-				"lifted": "0 30px 80px rgba(38, 29, 31, 0.12)"
-			},
 			"spacing": {
-				"content": "min(1120px, calc(100vw - 32px))",
-				"wide": "min(1280px, calc(100vw - 32px))"
+				"content": "min(1220px, calc(100vw - 40px))",
+				"wide": "min(1380px, calc(100vw - 40px))"
 			}
 		},
 		"layout": {
-			"contentSize": "760px",
-			"wideSize": "1120px"
+			"contentSize": "820px",
+			"wideSize": "1240px"
 		},
 		"shadow": {
 			"defaultPresets": false,
@@ -80,12 +81,12 @@
 				{
 					"name": "Soft",
 					"slug": "soft",
-					"shadow": "0 24px 60px rgba(38, 29, 31, 0.08)"
+					"shadow": "0 24px 60px rgba(56, 28, 52, 0.10)"
 				},
 				{
 					"name": "Lifted",
 					"slug": "lifted",
-					"shadow": "0 30px 80px rgba(38, 29, 31, 0.12)"
+					"shadow": "0 34px 90px rgba(47, 22, 44, 0.16)"
 				}
 			]
 		},
@@ -93,9 +94,6 @@
 			"blockGap": "1.5rem",
 			"margin": true,
 			"padding": true,
-			"spacingScale": {
-				"steps": 8
-			},
 			"spacingSizes": [
 				{
 					"slug": "2xs",
@@ -119,17 +117,17 @@
 				},
 				{
 					"slug": "lg",
-					"size": "3.5rem",
+					"size": "4rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "5rem",
+					"size": "6rem",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "7.5rem",
+					"size": "8.5rem",
 					"name": "2XL"
 				}
 			],
@@ -176,17 +174,17 @@
 				},
 				{
 					"slug": "lg",
-					"size": "1.375rem",
+					"size": "1.45rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(2.4rem, 5vw, 4.2rem)",
+					"size": "clamp(2.9rem, 5vw, 4.9rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "clamp(3.2rem, 7vw, 5.8rem)",
+					"size": "clamp(4rem, 8vw, 6.9rem)",
 					"name": "2XL"
 				}
 			],
@@ -199,20 +197,21 @@
 				},
 				"spacing": {
 					"padding": {
-						"top": "0.9rem",
-						"right": "1.5rem",
-						"bottom": "0.9rem",
-						"left": "1.5rem"
+						"top": "1rem",
+						"right": "1.65rem",
+						"bottom": "1rem",
+						"left": "1.65rem"
 					}
 				},
 				"typography": {
 					"fontSize": "0.95rem",
-					"fontWeight": "600"
+					"fontWeight": "700",
+					"letterSpacing": "0.02em"
 				}
 			},
 			"core/navigation": {
 				"typography": {
-					"fontSize": "0.96rem",
+					"fontSize": "0.95rem",
 					"fontWeight": "600"
 				}
 			},
@@ -224,7 +223,7 @@
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
-					"fontSize": "1.4rem",
+					"fontSize": "1.55rem",
 					"fontWeight": "600",
 					"letterSpacing": "0.02em"
 				}
@@ -240,7 +239,7 @@
 		"elements": {
 			"button": {
 				"color": {
-					"background": "var(--wp--preset--color--ink)",
+					"background": "var(--wp--preset--color--plum)",
 					"text": "var(--wp--preset--color--white)"
 				}
 			},
@@ -248,14 +247,14 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
 					"fontWeight": "600",
-					"lineHeight": "0.95"
+					"lineHeight": "0.92"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
 					"fontWeight": "600",
-					"lineHeight": "1"
+					"lineHeight": "0.96"
 				}
 			},
 			"h3": {
@@ -264,14 +263,9 @@
 					"fontWeight": "600"
 				}
 			},
-			"heading": {
-				"color": {
-					"text": "var(--wp--preset--color--ink)"
-				}
-			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--rosewood)"
+					"text": "var(--wp--preset--color--plum)"
 				},
 				":hover": {
 					"color": {
@@ -283,25 +277,20 @@
 		"spacing": {
 			"blockGap": "1.5rem",
 			"padding": {
-				"right": "16px",
-				"left": "16px"
+				"right": "20px",
+				"left": "20px"
 			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--body)",
 			"fontSize": "1rem",
 			"fontWeight": "400",
-			"lineHeight": "1.7"
+			"lineHeight": "1.75"
 		},
 		"blocks": {
-			"core/button": {
-				"border": {
-					"radius": "999px"
-				}
-			},
 			"core/buttons": {
 				"spacing": {
-					"blockGap": "0.875rem"
+					"blockGap": "0.95rem"
 				}
 			},
 			"core/group": {
@@ -311,7 +300,7 @@
 			},
 			"core/image": {
 				"border": {
-					"radius": "28px"
+					"radius": "34px"
 				}
 			},
 			"core/navigation-link": {
@@ -321,7 +310,7 @@
 			},
 			"core/post-featured-image": {
 				"border": {
-					"radius": "28px"
+					"radius": "34px"
 				}
 			},
 			"core/query-title": {
@@ -331,7 +320,7 @@
 			},
 			"core/separator": {
 				"color": {
-					"background": "var(--wp--preset--color--blush)"
+					"background": "var(--wp--preset--color--mist)"
 				}
 			}
 		}

@@ -13,6 +13,7 @@ if ( ! function_exists( 'ikizler_bale_setup' ) ) {
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'editor-styles' );
+		add_theme_support( 'post-thumbnails' );
 		add_editor_style( 'assets/css/editor.css' );
 		add_post_type_support( 'page', 'excerpt' );
 	}
@@ -61,6 +62,62 @@ if ( ! function_exists( 'ikizler_bale_register_dynamic_blocks' ) ) {
 				'render_callback' => 'ikizler_bale_render_footer_text_block',
 			)
 		);
+
+		register_block_type(
+			'ikizler-bale/topbar-text',
+			array(
+				'render_callback' => 'ikizler_bale_render_topbar_text_block',
+			)
+		);
+
+		register_block_type(
+			'ikizler-bale/header-actions',
+			array(
+				'render_callback' => 'ikizler_bale_render_header_actions_block',
+			)
+		);
 	}
 }
 add_action( 'init', 'ikizler_bale_register_dynamic_blocks' );
+
+if ( ! function_exists( 'ikizler_bale_flush_rewrite_on_switch' ) ) {
+	/**
+	 * Reduce first-run rewrite issues after theme switch.
+	 */
+	function ikizler_bale_flush_rewrite_on_switch() {
+		if ( function_exists( 'ikizler_bale_register_post_types' ) ) {
+			ikizler_bale_register_post_types();
+		}
+
+		flush_rewrite_rules();
+	}
+}
+add_action( 'after_switch_theme', 'ikizler_bale_flush_rewrite_on_switch' );
+
+if ( ! function_exists( 'ikizler_bale_change_title_placeholders' ) ) {
+	/**
+	 * Add clearer title placeholders for content managers.
+	 *
+	 * @param string  $title Default title.
+	 * @param WP_Post $post Current post.
+	 * @return string
+	 */
+	function ikizler_bale_change_title_placeholders( $title, $post ) {
+		$placeholders = array(
+			'egitmen'      => 'Egitmen adini yazin',
+			'egitim'       => 'Egitim/program adini yazin',
+			'yas_grubu'    => 'Yas grubu basligini yazin',
+			'etkinlik'     => 'Etkinlik adini yazin',
+			'galeri_ogesi' => 'Galeri ogesi basligini yazin',
+			'sss'          => 'SSS sorusunu yazin',
+			'referans'     => 'Referans sahibinin adini yazin',
+		);
+
+		if ( isset( $placeholders[ $post->post_type ] ) ) {
+			return $placeholders[ $post->post_type ];
+		}
+
+		return $title;
+	}
+}
+add_filter( 'enter_title_here', 'ikizler_bale_change_title_placeholders', 10, 2 );

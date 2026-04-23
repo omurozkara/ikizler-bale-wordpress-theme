@@ -16,9 +16,16 @@ if ( ! function_exists( 'ikizler_bale_register_acf_fields' ) ) {
 
 		acf_add_local_field_group(
 			array(
-				'key'    => 'group_ikizler_homepage_fields',
-				'title'  => 'Ana Sayfa Icerik Alanlari',
+				'key'      => 'group_ikizler_homepage_fields',
+				'title'    => 'Ana Sayfa Icerik Alanlari',
+				'style'    => 'default',
+				'position' => 'acf_after_title',
 				'fields' => array(
+					array(
+						'key'   => 'field_ikizler_home_tab_hero',
+						'label' => 'Hero',
+						'type'  => 'tab',
+					),
 					array(
 						'key'           => 'field_ikizler_home_badge',
 						'label'         => 'Hero Ust Etiket',
@@ -82,6 +89,51 @@ if ( ! function_exists( 'ikizler_bale_register_acf_fields' ) ) {
 						'library'       => 'all',
 					),
 					array(
+						'key'           => 'field_ikizler_home_audience_child_title',
+						'label'         => 'Cocuk Basligi',
+						'name'          => 'hero_cocuk_baslik',
+						'type'          => 'text',
+						'default_value' => 'Cocuk',
+					),
+					array(
+						'key'           => 'field_ikizler_home_audience_child_text',
+						'label'         => 'Cocuk Aciklamasi',
+						'name'          => 'hero_cocuk_aciklama',
+						'type'          => 'textarea',
+						'rows'          => 2,
+						'default_value' => 'Temel durus, ritim ve sahne guveni odakli yapilandirilmis programlar.',
+					),
+					array(
+						'key'           => 'field_ikizler_home_audience_youth_title',
+						'label'         => 'Genclik Basligi',
+						'name'          => 'hero_genclik_baslik',
+						'type'          => 'text',
+						'default_value' => 'Genclik',
+					),
+					array(
+						'key'           => 'field_ikizler_home_audience_youth_text',
+						'label'         => 'Genclik Aciklamasi',
+						'name'          => 'hero_genclik_aciklama',
+						'type'          => 'textarea',
+						'rows'          => 2,
+						'default_value' => 'Teknik gelisim, zarafet ve performans disiplinini bir araya getiren egitimler.',
+					),
+					array(
+						'key'           => 'field_ikizler_home_audience_adult_title',
+						'label'         => 'Yetiskin Basligi',
+						'name'          => 'hero_yetiskin_baslik',
+						'type'          => 'text',
+						'default_value' => 'Yetiskin',
+					),
+					array(
+						'key'           => 'field_ikizler_home_audience_adult_text',
+						'label'         => 'Yetiskin Aciklamasi',
+						'name'          => 'hero_yetiskin_aciklama',
+						'type'          => 'textarea',
+						'rows'          => 2,
+						'default_value' => 'Baslangic ve ileri seviye katilimcilar icin sakin, destekleyici ders akislari.',
+					),
+					array(
 						'key'           => 'field_ikizler_home_card_title',
 						'label'         => 'Hero Kart Basligi',
 						'name'          => 'hero_kart_basligi',
@@ -102,6 +154,11 @@ if ( ! function_exists( 'ikizler_bale_register_acf_fields' ) ) {
 						'name'          => 'hero_kart_vurgu',
 						'type'          => 'text',
 						'default_value' => "2010'dan beri",
+					),
+					array(
+						'key'   => 'field_ikizler_home_tab_cta',
+						'label' => 'Alt CTA',
+						'type'  => 'tab',
 					),
 					array(
 						'key'           => 'field_ikizler_home_cta_badge',
@@ -246,6 +303,9 @@ if ( ! function_exists( 'ikizler_bale_register_acf_fields' ) ) {
 						'name'         => $field[1],
 						'type'         => $field[2],
 						'instructions' => $field[3],
+						'wrapper'      => array(
+							'width' => '',
+						),
 					),
 					$extra
 				);
@@ -256,6 +316,8 @@ if ( ! function_exists( 'ikizler_bale_register_acf_fields' ) ) {
 					'key'      => 'group_' . $post_type . '_fields',
 					'title'    => $group['title'],
 					'fields'   => $fields,
+					'position' => 'acf_after_title',
+					'style'    => 'default',
 					'location' => array(
 						array(
 							array(
