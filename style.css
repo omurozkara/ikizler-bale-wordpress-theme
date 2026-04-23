@@ -1,0 +1,75 @@
+/*
+Theme Name: Ikizler Bale Akademi
+Theme URI: https://ozelikizlerbalekursu.com/
+Author: OpenAI Codex
+Author URI: https://openai.com/
+Description: Ozel Ikizler Bale Akademi icin hazirlanan premium, hafif ve block theme tabanli WordPress tema iskeleti.
+Requires at least: 6.5
+Tested up to: 6.8
+Requires PHP: 8.1
+Version: 0.1.0
+Text Domain: ikizler-bale
+Tags: full-site-editing, block-patterns, custom-colors, custom-logo, editor-style, featured-images
+*/
+
+body {
+	margin: 0;
+}
+
+.wp-site-blocks {
+	min-height: 100vh;
+}
+
+.is-style-ikizler-button-outline {
+	border: 1px solid currentColor;
+}
+
+.ikizler-section-label {
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.ikizler-soft-card {
+	border-radius: 28px;
+	box-shadow: 0 24px 60px rgba(38, 29, 31, 0.08);
+}
+
+.ikizler-divider {
+	width: 72px;
+	height: 1px;
+	background: currentColor;
+	opacity: 0.3;
+}
+
+.ikizler-page-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.ikizler-page-hero::after {
+	content: "";
+	position: absolute;
+	inset: auto -10% -30% auto;
+	width: 320px;
+	height: 320px;
+	border-radius: 999px;
+	background: radial-gradient(circle, rgba(219, 199, 196, 0.5) 0%, rgba(219, 199, 196, 0) 70%);
+	pointer-events: none;
+}
+
+.ikizler-grid-card {
+	height: 100%;
+	border-radius: 28px;
+}
+
+.ikizler-muted {
+	opacity: 0.82;
+}
+
+@media (max-width: 781px) {
+	.hide-mobile {
+		display: none !important;
+	}
+}
