@@ -1,4 +1,4 @@
-name: Deploy WordPress Theme
+name: Deploy WordPress Theme via FTP
 
 on:
   push:
@@ -13,40 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Prepare SSH key
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p ~/.ssh
-          echo "${{ secrets.CPANEL_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
-
-      - name: Add host to known_hosts
-        shell: bash
-        run: |
-          set -euxo pipefail
-          ssh-keyscan -p "${{ secrets.CPANEL_PORT }}" "${{ secrets.CPANEL_HOST }}" >> ~/.ssh/known_hosts
-
-      - name: Test SSH connection
-        shell: bash
-        run: |
-          set -euxo pipefail
-          ssh -i ~/.ssh/id_rsa -p "${{ secrets.CPANEL_PORT }}" -o StrictHostKeyChecking=yes "${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}" "echo SSH_OK"
-
-      - name: Ensure remote theme directory exists
-        shell: bash
-        run: |
-          set -euxo pipefail
-          ssh -i ~/.ssh/id_rsa -p "${{ secrets.CPANEL_PORT }}" "${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}" "mkdir -p '${{ secrets.CPANEL_THEME_PATH }}'"
-
-      - name: Deploy theme files with rsync
-        shell: bash
-        run: |
-          set -euxo pipefail
-          rsync -avz --delete \
-            --exclude='.git' \
-            --exclude='.github' \
-            --exclude='.cpanel.yml' \
-            -e "ssh -i ~/.ssh/id_rsa -p ${{ secrets.CPANEL_PORT }}" \
-            ./ "${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}:${{ secrets.CPANEL_THEME_PATH }}/"
+      - name: Deploy theme files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.cpanel.yml
+            **/node_modules/**
+            **/.vscode/**
