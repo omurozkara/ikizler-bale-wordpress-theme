@@ -9,8 +9,8 @@
  */
 ?>
 <!-- wp:group {"align":"full","backgroundColor":"surface","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood","align":"center"} -->
+<div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-instructor-grid","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-editorial-section ikizler-instructor-grid"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood","align":"center"} -->
 <p class="ikizler-section-label has-text-align-center has-rosewood-color has-text-color">Egitmenler</p>
 <!-- /wp:paragraph -->
 

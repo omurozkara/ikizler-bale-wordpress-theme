@@ -8,9 +8,9 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"full","gradient":"hero-glow","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-hero-glow-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<!-- wp:group {"align":"full","gradient":"soft-radial","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-soft-radial-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-gallery-grid","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-editorial-section ikizler-gallery-grid"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
 <p class="ikizler-section-label has-rosewood-color has-text-color">Etkinlikler</p>

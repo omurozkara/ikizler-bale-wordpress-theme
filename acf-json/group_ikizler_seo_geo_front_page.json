@@ -1,0 +1,288 @@
+{
+    "key": "group_ikizler_seo_geo_front_page",
+    "title": "SEO ve Geo Yerel Bilgiler",
+    "fields": [
+        {
+            "key": "field_ikizler_seo_geo_tab_meta",
+            "label": "SEO Meta",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ikizler_seo_title",
+            "label": "SEO Baslik",
+            "name": "seo_baslik",
+            "type": "text",
+            "instructions": "Ana sayfa title etiketi ve yerel SEO odagi icin kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ozel Ikizler Bale Akademi | Premium Bale Egitimi",
+            "maxlength": ""
+        },
+        {
+            "key": "field_ikizler_seo_description",
+            "label": "SEO Aciklama",
+            "name": "seo_aciklama",
+            "type": "textarea",
+            "instructions": "Ana sayfa meta description ve paylasim ozetlerinde kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ozel Ikizler Bale Akademi; cocuk, genc ve yetiskin ogrenciler icin zarif, guven veren ve profesyonel bale egitimi sunar.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_ikizler_focus_keyword",
+            "label": "Odak Anahtar Kelime",
+            "name": "seo_odak_anahtar_kelime",
+            "type": "text",
+            "instructions": "Ornek: ozel bale kursu, bale akademisi, cocuk bale dersi",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ozel ikizler bale akademi"
+        },
+        {
+            "key": "field_ikizler_service_area",
+            "label": "Hizmet Bolgesi Metni",
+            "name": "seo_hizmet_bolgesi",
+            "type": "text",
+            "instructions": "Ornek: Istanbul Anadolu Yakasi bale egitimi",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_seo_geo_tab_location",
+            "label": "Geo Bilgileri",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ikizler_geo_place_name",
+            "label": "Mekan / Akademi Adi",
+            "name": "geo_mekan_adi",
+            "type": "text",
+            "instructions": "Schema Place veya LocalBusiness bilgisi icin kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ozel Ikizler Bale Akademi"
+        },
+        {
+            "key": "field_ikizler_geo_region",
+            "label": "Il / Bolge",
+            "name": "geo_il",
+            "type": "text",
+            "instructions": "Ornek: Istanbul",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_geo_district",
+            "label": "Ilce",
+            "name": "geo_ilce",
+            "type": "text",
+            "instructions": "Ornek: Kadikoy",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_geo_address",
+            "label": "Acik Adres",
+            "name": "geo_acik_adres",
+            "type": "textarea",
+            "instructions": "Yerel SEO ve iletisim icerikleri icin kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_ikizler_geo_latitude",
+            "label": "Enlem",
+            "name": "geo_latitude",
+            "type": "text",
+            "instructions": "Ornek: 40.987654",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_geo_longitude",
+            "label": "Boylam",
+            "name": "geo_longitude",
+            "type": "text",
+            "instructions": "Ornek: 29.123456",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_geo_maps",
+            "label": "Google Maps Linki",
+            "name": "geo_maps_linki",
+            "type": "url",
+            "instructions": "Paylasim, schema veya footer linklerinde kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_seo_geo_tab_social",
+            "label": "Kurumsal Profiller",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ikizler_sameas_instagram",
+            "label": "Instagram Profil Linki",
+            "name": "geo_sameas_instagram",
+            "type": "url",
+            "instructions": "Schema sameAs icin kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_sameas_facebook",
+            "label": "Facebook Profil Linki",
+            "name": "geo_sameas_facebook",
+            "type": "url",
+            "instructions": "Schema sameAs icin kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_ikizler_sameas_youtube",
+            "label": "YouTube Kanal Linki",
+            "name": "geo_sameas_youtube",
+            "type": "url",
+            "instructions": "Schema sameAs icin kullanilabilir.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Ana sayfa icin SEO ve yerel geo verileri. ACF Free ile uyumludur.",
+    "show_in_rest": 0,
+    "modified": 1776902400
+}

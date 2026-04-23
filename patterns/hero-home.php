@@ -37,8 +37,8 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <h1 class="wp-block-heading has-2-xl-font-size"><?php echo esc_html( $hero_title ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"md","textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color has-md-font-size"><?php echo esc_html( $hero_description ); ?></p>
+<!-- wp:paragraph {"fontSize":"md","textColor":"mauve"} -->
+<p class="has-mauve-color has-text-color has-md-font-size"><?php echo esc_html( $hero_description ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -81,11 +81,21 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <p><?php echo esc_html( $hero_adult_text ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|sm"}}},"layout":{"type":"flex","justifyContent":"left","verticalAlignment":"center","flexWrap":"wrap"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--sm)"><!-- wp:paragraph {"textColor":"plum","fontSize":"sm"} -->
+<p class="has-plum-color has-text-color has-sm-font-size"><?php echo esc_html( $hero_card_highlight ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"mauve","fontSize":"sm"} -->
+<p class="has-mauve-color has-text-color has-sm-font-size"><?php echo esc_html( $hero_card_desc ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|lifted"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-soft-card ikizler-hero-media-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"36px"}}} -->
 <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( $hero_image['url'] ); ?>" alt="<?php echo esc_attr( $hero_image['alt'] ); ?>" style="border-radius:36px"/></figure>
 <!-- /wp:image -->
@@ -101,9 +111,15 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
+<!-- wp:group {"backgroundColor":"surface","style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"18px","right":"20px","bottom":"18px","left":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-surface-background-color has-background" style="border-radius:24px;padding-top:18px;padding-right:20px;padding-bottom:18px;padding-left:20px"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"mauve"} -->
+<p class="ikizler-section-label has-mauve-color has-text-color">Kurumsal Durus</p>
+<!-- /wp:paragraph -->
+
 <!-- wp:paragraph {"textColor":"plum","fontSize":"lg"} -->
 <p class="has-plum-color has-text-color has-lg-font-size"><?php echo esc_html( $hero_card_highlight ); ?></p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

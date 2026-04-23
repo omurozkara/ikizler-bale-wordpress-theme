@@ -8,8 +8,8 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"bottom"} -->
+<!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-program-grid","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-editorial-section ikizler-program-grid" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"bottom"} -->
 <div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"58%"} -->
 <div class="wp-block-column" style="flex-basis:58%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
 <p class="ikizler-section-label has-rosewood-color has-text-color">Programlar</p>
@@ -30,8 +30,8 @@
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-soft-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"gold"} -->
-<p class="ikizler-section-label has-gold-color has-text-color">Minik Balerinler</p>
+<div class="wp-block-group ikizler-soft-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"blush"} -->
+<p class="ikizler-section-label has-blush-color has-text-color">Minik Balerinler</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"fontSize":"lg"} -->
@@ -46,8 +46,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"backgroundColor":"surface","className":"ikizler-soft-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-soft-card has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"gold"} -->
-<p class="ikizler-section-label has-gold-color has-text-color">Genc Programi</p>
+<div class="wp-block-group ikizler-soft-card has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"blush"} -->
+<p class="ikizler-section-label has-blush-color has-text-color">Genc Programi</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"fontSize":"lg"} -->
@@ -62,8 +62,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-soft-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"gold"} -->
-<p class="ikizler-section-label has-gold-color has-text-color">Yetiskin Dersleri</p>
+<div class="wp-block-group ikizler-soft-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"blush"} -->
+<p class="ikizler-section-label has-blush-color has-text-color">Yetiskin Dersleri</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"fontSize":"lg"} -->

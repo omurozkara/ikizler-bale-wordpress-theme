@@ -37,6 +37,20 @@ if ( ! function_exists( 'ikizler_bale_get_option' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ikizler_bale_get_phone_href' ) ) {
+	/**
+	 * Normalize phone number for tel links.
+	 *
+	 * @param string $phone Raw phone text.
+	 * @return string
+	 */
+	function ikizler_bale_get_phone_href( $phone ) {
+		$normalized = preg_replace( '/[^0-9+]/', '', $phone );
+
+		return $normalized ? 'tel:' . $normalized : '';
+	}
+}
+
 if ( ! function_exists( 'ikizler_bale_get_brand_name' ) ) {
 	/**
 	 * Return a safe brand name instead of weak WordPress defaults.
@@ -288,6 +302,8 @@ if ( ! function_exists( 'ikizler_bale_render_brand_lockup_block' ) ) {
 	function ikizler_bale_render_brand_lockup_block() {
 		$home_url = home_url( '/' );
 		$logo     = has_custom_logo() ? get_custom_logo() : '';
+		$name     = ikizler_bale_get_brand_name();
+		$tagline  = ikizler_bale_get_brand_tagline();
 
 		ob_start();
 		?>
@@ -296,8 +312,8 @@ if ( ! function_exists( 'ikizler_bale_render_brand_lockup_block' ) ) {
 				<div class="ikizler-brand-render__logo"><?php echo wp_kses_post( $logo ); ?></div>
 			<?php endif; ?>
 			<div class="ikizler-brand-render__text">
-				<a class="ikizler-brand-render__title" href="<?php echo esc_url( $home_url ); ?>"><?php echo esc_html( ikizler_bale_get_brand_name() ); ?></a>
-				<p class="ikizler-brand-render__tagline"><?php echo esc_html( ikizler_bale_get_brand_tagline() ); ?></p>
+				<a class="ikizler-brand-render__title" href="<?php echo esc_url( $home_url ); ?>"><?php echo esc_html( $name ); ?></a>
+				<p class="ikizler-brand-render__tagline"><?php echo esc_html( $tagline ); ?></p>
 			</div>
 		</div>
 		<?php
@@ -322,6 +338,7 @@ if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 		$facebook  = ikizler_bale_get_option( 'facebook_url' );
 		$youtube   = ikizler_bale_get_option( 'youtube_url' );
 		$socials   = array();
+		$phone_url = ikizler_bale_get_phone_href( $phone );
 
 		if ( $whatsapp ) {
 			$socials[] = sprintf( '<a href="%s">WhatsApp</a>', esc_url( $whatsapp ) );
@@ -342,7 +359,7 @@ if ( ! function_exists( 'ikizler_bale_render_contact_info_block' ) ) {
 		ob_start();
 		?>
 		<div class="wp-block-group ikizler-footer-contact">
-			<p class="has-blush-color has-text-color has-sm-font-size"><strong>Telefon:</strong> <?php echo esc_html( $phone ); ?></p>
+			<p class="has-blush-color has-text-color has-sm-font-size"><strong>Telefon:</strong> <?php if ( $phone_url ) : ?><a href="<?php echo esc_url( $phone_url ); ?>"><?php echo esc_html( $phone ); ?></a><?php else : ?><?php echo esc_html( $phone ); ?><?php endif; ?></p>
 			<p class="has-blush-color has-text-color has-sm-font-size"><strong>E-posta:</strong> <a href="mailto:<?php echo esc_attr( antispambot( $email ) ); ?>"><?php echo esc_html( antispambot( $email ) ); ?></a></p>
 			<p class="has-blush-color has-text-color has-sm-font-size"><strong>Adres:</strong> <?php echo esc_html( $address ); ?></p>
 			<?php if ( $maps_url ) : ?>
@@ -402,7 +419,7 @@ if ( ! function_exists( 'ikizler_bale_render_topbar_text_block' ) ) {
 		$text = ikizler_bale_get_option( 'topbar_text', 'Cocuk, genc ve yetiskin ogrenciler icin premium bale egitimi' );
 
 		return sprintf(
-			'<p class="has-rosewood-color has-text-color has-xs-font-size">%s</p>',
+			'<p class="has-mauve-color has-text-color has-xs-font-size">%s</p>',
 			esc_html( $text )
 		);
 	}

@@ -25,8 +25,8 @@
 
 <!-- wp:column {"width":"55%"} -->
 <div class="wp-block-column" style="flex-basis:55%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-soft-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"gold"} -->
-<p class="ikizler-section-label has-gold-color has-text-color">Yer Tutucu Bilgiler</p>
+<div class="wp-block-group ikizler-soft-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"blush"} -->
+<p class="ikizler-section-label has-blush-color has-text-color">Yer Tutucu Bilgiler</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

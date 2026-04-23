@@ -16,20 +16,24 @@ $cta_primary_url     = ikizler_bale_get_contact_url( (string) ikizler_bale_get_f
 $cta_secondary_label = ikizler_bale_get_front_page_field( 'cta_ikincil_buton_metin', 'Haftalik Programi Inceleyin' );
 $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_front_page_field( 'cta_ikincil_buton_link', '' ) );
 ?>
-<!-- wp:group {"align":"wide","className":"ikizler-soft-card ikizler-cta-shell","backgroundColor":"ink","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","right":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl","left":"var:preset|spacing|xl"},"margin":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|2xl"}},"shadow":"var:preset|shadow|lifted"},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide ikizler-soft-card ikizler-cta-shell has-white-color has-ink-background-color has-text-color has-background" style="margin-top:var(--wp--preset--spacing--xl);margin-bottom:var(--wp--preset--spacing--2xl);padding-top:var(--wp--preset--spacing--xl);padding-right:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl);padding-left:var(--wp--preset--spacing--xl)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"blush","align":"center"} -->
-<p class="ikizler-section-label has-text-align-center has-blush-color has-text-color"><?php echo esc_html( $cta_badge ); ?></p>
+<!-- wp:group {"align":"wide","className":"ikizler-soft-card ikizler-cta-shell","backgroundColor":"ink","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","right":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl","left":"var:preset|spacing|xl"},"margin":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|2xl"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-soft-card ikizler-cta-shell has-white-color has-ink-background-color has-text-color has-background" style="margin-top:var(--wp--preset--spacing--xl);margin-bottom:var(--wp--preset--spacing--2xl);padding-top:var(--wp--preset--spacing--xl);padding-right:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl);padding-left:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:58%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
+<p class="ikizler-section-label has-champagne-color has-text-color"><?php echo esc_html( $cta_badge ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"textAlign":"center","fontSize":"xl"} -->
-<h2 class="wp-block-heading has-text-align-center has-xl-font-size"><?php echo esc_html( $cta_title ); ?></h2>
-<!-- /wp:heading -->
+<!-- wp:heading {"fontSize":"xl"} -->
+<h2 class="wp-block-heading has-xl-font-size"><?php echo esc_html( $cta_title ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
 
-<!-- wp:paragraph {"align":"center","textColor":"mist","fontSize":"md"} -->
-<p class="has-text-align-center has-mist-color has-text-color has-md-font-size"><?php echo esc_html( $cta_description ); ?></p>
+<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:42%"><!-- wp:paragraph {"textColor":"mist","fontSize":"md"} -->
+<p class="has-mist-color has-text-color has-md-font-size"><?php echo esc_html( $cta_description ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"ink"} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-ink-color has-white-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( $cta_primary_url ); ?>"><?php echo esc_html( $cta_primary_label ); ?></a></div>
 <!-- /wp:button -->
@@ -38,4 +42,6 @@ $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-white-color has-text-color has-border-color has-mist-border-color wp-element-button" href="<?php echo esc_url( $cta_secondary_url ); ?>"><?php echo esc_html( $cta_secondary_label ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->

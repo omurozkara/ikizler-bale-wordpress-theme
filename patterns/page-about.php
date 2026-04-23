@@ -25,8 +25,8 @@
 
 <!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:group {"backgroundColor":"surface","className":"ikizler-soft-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-soft-card has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"gold"} -->
-<p class="ikizler-section-label has-gold-color has-text-color">Temel Ilkeler</p>
+<div class="wp-block-group ikizler-soft-card has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"blush"} -->
+<p class="ikizler-section-label has-blush-color has-text-color">Temel Ilkeler</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
