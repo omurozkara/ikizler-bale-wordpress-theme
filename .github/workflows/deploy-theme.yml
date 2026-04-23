@@ -14,18 +14,36 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Prepare SSH key
+        shell: bash
         run: |
+          set -euxo pipefail
           mkdir -p ~/.ssh
-          printf "%s" "${{ secrets.CPANEL_SSH_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.CPANEL_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
+
+      - name: Add host to known_hosts
+        shell: bash
+        run: |
+          set -euxo pipefail
           ssh-keyscan -p "${{ secrets.CPANEL_PORT }}" "${{ secrets.CPANEL_HOST }}" >> ~/.ssh/known_hosts
 
-      - name: Ensure remote theme directory exists
+      - name: Test SSH connection
+        shell: bash
         run: |
+          set -euxo pipefail
+          ssh -i ~/.ssh/id_rsa -p "${{ secrets.CPANEL_PORT }}" -o StrictHostKeyChecking=yes "${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}" "echo SSH_OK"
+
+      - name: Ensure remote theme directory exists
+        shell: bash
+        run: |
+          set -euxo pipefail
           ssh -i ~/.ssh/id_rsa -p "${{ secrets.CPANEL_PORT }}" "${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}" "mkdir -p '${{ secrets.CPANEL_THEME_PATH }}'"
 
       - name: Deploy theme files with rsync
+        shell: bash
         run: |
+          set -euxo pipefail
           rsync -avz --delete \
             --exclude='.git' \
             --exclude='.github' \
