@@ -23,3 +23,4 @@ Bu klasor, `ozelikizlerbalekursu.com` icin hazirlanan block theme tabanli WordPr
 - ACF Free alan gruplari
 - Form entegrasyonlari
 - SEO ve performans iyilestirmeleri
+- Sr. Ömür Deniz Özkara
