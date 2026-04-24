@@ -25,7 +25,11 @@ $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_
 
 <!-- wp:heading {"fontSize":"xl"} -->
 <h2 class="wp-block-heading has-xl-font-size"><?php echo esc_html( $cta_title ); ?></h2>
-<!-- /wp:heading --></div>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"mist","fontSize":"sm"} -->
+<p class="has-mist-color has-text-color has-sm-font-size">Daha hizli yonlendirme, daha net basvuru akisi ve guven veren bir ilk iletisim deneyimi.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"42%"} -->

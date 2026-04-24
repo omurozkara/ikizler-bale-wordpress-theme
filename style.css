@@ -356,22 +356,21 @@ p {
 	object-fit: cover;
 }
 
-.ikizler-hero-meta {
-	gap: 1.25rem;
+.ikizler-hero-overlay-card {
+	position: relative;
+	margin: -4.5rem 1.2rem 0 auto;
+	max-width: 360px;
+	border: 1px solid rgba(92, 49, 78, 0.08);
 }
 
-.ikizler-hero-meta .has-lg-font-size {
-	font-size: clamp(1.3rem, 1.8vw, 1.75rem) !important;
-	line-height: 1;
+.ikizler-hero-overlay-card .has-lg-font-size {
+	font-size: 1.4rem !important;
+	line-height: 1.1;
 }
 
-.ikizler-hero-meta .has-sm-font-size {
-	font-size: 0.92rem !important;
-	line-height: 1.55;
-}
-
-.ikizler-hero-meta .wp-block-group:first-child {
-	flex: 1;
+.ikizler-hero-overlay-card .has-sm-font-size {
+	font-size: 0.94rem !important;
+	line-height: 1.58;
 }
 
 .ikizler-editorial-section {
@@ -432,6 +431,29 @@ p {
 .ikizler-age-grid .ikizler-grid-card .wp-block-heading,
 .ikizler-program-grid .ikizler-soft-card .wp-block-heading {
 	max-width: 14ch;
+}
+
+.ikizler-schedule-panel {
+	overflow: hidden;
+}
+
+.ikizler-schedule-panel .wp-block-columns {
+	gap: 1.2rem;
+}
+
+.ikizler-schedule-panel ul {
+	margin: 0;
+	padding-left: 1rem;
+}
+
+.ikizler-schedule-visual img {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+.ikizler-page-aside-card {
+	overflow: hidden;
 }
 
 .ikizler-story-figure img,
@@ -636,6 +658,11 @@ p {
 	.ikizler-hero-media-card img {
 		min-height: 500px;
 	}
+
+	.ikizler-hero-overlay-card {
+		margin-top: -3rem;
+		max-width: 320px;
+	}
 }
 
 @media (max-width: 781px) {
@@ -669,6 +696,11 @@ p {
 
 	.ikizler-hero-media-card img {
 		min-height: 360px;
+	}
+
+	.ikizler-hero-overlay-card {
+		margin: 1rem 0 0;
+		max-width: none;
 	}
 
 	.ikizler-instructor-grid .wp-block-column,

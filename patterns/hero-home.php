@@ -28,8 +28,8 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 ?>
 <!-- wp:group {"align":"full","className":"ikizler-hero-shell","gradient":"hero-aura","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull ikizler-hero-shell has-hero-aura-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--2xl)"><!-- wp:columns {"align":"wide","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"55%","className":"ikizler-hero-copy"} -->
-<div class="wp-block-column is-vertically-aligned-center ikizler-hero-copy" style="flex-basis:55%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"53%","className":"ikizler-hero-copy"} -->
+<div class="wp-block-column is-vertically-aligned-center ikizler-hero-copy" style="flex-basis:53%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
 <p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_badge ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -81,45 +81,27 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <p><?php echo esc_html( $hero_adult_text ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|sm"}}},"layout":{"type":"flex","justifyContent":"left","verticalAlignment":"center","flexWrap":"wrap"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--sm)"><!-- wp:paragraph {"textColor":"plum","fontSize":"sm"} -->
-<p class="has-plum-color has-text-color has-sm-font-size"><?php echo esc_html( $hero_card_highlight ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"textColor":"mauve","fontSize":"sm"} -->
-<p class="has-mauve-color has-text-color has-sm-font-size"><?php echo esc_html( $hero_card_desc ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
+<!-- wp:column {"verticalAlignment":"center","width":"47%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:47%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-soft-card ikizler-hero-media-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"36px"}}} -->
 <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( $hero_image['url'] ); ?>" alt="<?php echo esc_attr( $hero_image['alt'] ); ?>" style="border-radius:36px"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"className":"ikizler-hero-meta","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm"}}},"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"wrap"}} -->
-<div class="wp-block-group ikizler-hero-meta" style="padding-top:var(--wp--preset--spacing--sm)"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
-<p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_card_title ); ?></p>
+<!-- wp:group {"backgroundColor":"white","className":"ikizler-hero-overlay-card","style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"18px","right":"20px","bottom":"18px","left":"20px"}},"shadow":"var:preset|shadow|soft"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-hero-overlay-card has-white-background-color has-background" style="border-radius:24px;padding-top:18px;padding-right:20px;padding-bottom:18px;padding-left:20px"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"mauve"} -->
+<p class="ikizler-section-label has-mauve-color has-text-color"><?php echo esc_html( $hero_card_title ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"sm"} -->
 <p class="has-sm-font-size"><?php echo esc_html( $hero_card_desc ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"backgroundColor":"surface","style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"18px","right":"20px","bottom":"18px","left":"20px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-surface-background-color has-background" style="border-radius:24px;padding-top:18px;padding-right:20px;padding-bottom:18px;padding-left:20px"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"mauve"} -->
-<p class="ikizler-section-label has-mauve-color has-text-color">Kurumsal Durus</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"plum","fontSize":"lg"} -->
 <p class="has-plum-color has-text-color has-lg-font-size"><?php echo esc_html( $hero_card_highlight ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
