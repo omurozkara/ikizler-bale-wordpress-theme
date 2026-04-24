@@ -20,6 +20,10 @@
 <h2 class="wp-block-heading has-xl-font-size">Sahne deneyimi, atolyeler ve akademi gosterileriyle markaya canli bir ritim kazandirir.</h2>
 <!-- /wp:heading -->
 
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-card-media"} -->
+<figure class="wp-block-image size-large ikizler-card-media"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Etkinlik ve sahne deneyimi"/></figure>
+<!-- /wp:image -->
+
 <!-- wp:list -->
 <ul><li>Donem sonu gosterileri</li><li>Acik sinif gunleri</li><li>Ozel atolyeler ve mini performanslar</li></ul>
 <!-- /wp:list --></div>

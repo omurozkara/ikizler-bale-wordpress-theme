@@ -8,8 +8,8 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"wide","className":"ikizler-editorial-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide ikizler-editorial-section" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"bottom"} -->
+<!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-blog-grid","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-editorial-section ikizler-blog-grid" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"bottom"} -->
 <div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"55%"} -->
 <div class="wp-block-column" style="flex-basis:55%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
 <p class="ikizler-section-label has-rosewood-color has-text-color">Blog / Duyurular</p>
@@ -22,7 +22,7 @@
 
 <!-- wp:column {"width":"45%"} -->
 <div class="wp-block-column" style="flex-basis:45%"><!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Blog arayuzu Faz 2'de kuruldu. Bu bolum ileride editor ekibi tarafindan duyuru, etkinlik ve bilgilendirici iceriklerle doldurulabilir.</p>
+<p class="has-rosewood-color has-text-color">Bu alan; duyurular, etkinlik haberleri ve velileri bilgilendiren daha kisa editoryal icerikler icin hazirlandi.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

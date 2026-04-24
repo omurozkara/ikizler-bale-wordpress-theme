@@ -29,7 +29,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Klasik bale, temel teknik ve cocuk gelisimine duyarli ders yaklasimi.</p>
+<p class="has-rosewood-color has-text-color">Klasik temel, durus ve cocuk gelisimine duyarli ders yaklasimi.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -43,7 +43,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Genc ve ileri seviye ogrenciler icin durus, akicilik ve performans calismalari.</p>
+<p class="has-rosewood-color has-text-color">Genc gruplarda akicilik, disiplin ve performans guveni odakli calismalar.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -57,7 +57,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Baslangic seviyesinde cesaret veren, ileri seviyede ise teknigi derinlestiren planlama.</p>
+<p class="has-rosewood-color has-text-color">Baslangicta cesaret veren, ileride ise teknigi derinlestiren rafine planlama.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

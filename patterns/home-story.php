@@ -26,11 +26,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Ozel Ikizler Bale Akademi, teknik gelisimi sanat duyarliligi ve duzenli egitim disipliniyle bir araya getiren kurumsal bir bale okuludur. Amac, her ogrencinin yasina ve seviyesine uygun bir akista gelisim gostermesini saglamaktir.</p>
+<p>Ozel Ikizler Bale Akademi, teknik gelisimi sanat duyarliligi ve duzenli egitim disipliniyle bir araya getiren kurumsal bir bale okuludur.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Bu yapi; veliler icin guven verici, ogrenciler icin motive edici ve marka acisindan premium bir ilk izlenim olusturmak uzere tasarlanmistir.</p>
+<p class="has-rosewood-color has-text-color">Veliler icin guven verici, ogrenciler icin motive edici ve marka acisindan premium bir ilk izlenim olusturmayi hedefler.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
