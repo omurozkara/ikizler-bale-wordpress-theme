@@ -9,8 +9,8 @@
  */
 
 $cta_badge           = ikizler_bale_get_front_page_field( 'cta_ust_etiket', 'Ilk Adim' );
-$cta_title           = ikizler_bale_get_front_page_field( 'cta_baslik', 'Deneme dersi ve on kayit surecini zarif, net ve kolay bir deneyime donusturelim.' );
-$cta_description     = ikizler_bale_get_front_page_field( 'cta_aciklama', 'Iletisim ve basvuru surecini bu alandan yonlendirebilirsiniz.' );
+$cta_title           = ikizler_bale_get_front_page_field( 'cta_baslik', 'Deneme dersi, program secimi ve iletisim surecini tek noktadan hizlica yonetelim.' );
+$cta_description     = ikizler_bale_get_front_page_field( 'cta_aciklama', 'Bilgi alin, uygun programi inceleyin ya da deneme dersi icin dogrudan aksiyona gecin.' );
 $cta_primary_label   = ikizler_bale_get_front_page_field( 'cta_birincil_buton_metin', 'Iletisime Gecin' );
 $cta_primary_url     = ikizler_bale_get_contact_url( (string) ikizler_bale_get_front_page_field( 'cta_birincil_buton_link', '' ) );
 $cta_secondary_label = ikizler_bale_get_front_page_field( 'cta_ikincil_buton_metin', 'Haftalik Programi Inceleyin' );
@@ -28,7 +28,7 @@ $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"mist","fontSize":"sm"} -->
-<p class="has-mist-color has-text-color has-sm-font-size">Daha hizli yonlendirme, daha net basvuru akisi ve guven veren bir ilk iletisim deneyimi.</p>
+<p class="has-mist-color has-text-color has-sm-font-size">Daha guclu CTA hiyerarsisi ile kullaniciyi bilgi almaya, program incelemeye ve kayit adimina daha rahat tasir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

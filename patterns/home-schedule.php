@@ -8,19 +8,19 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"wide","className":"ikizler-editorial-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide ikizler-editorial-section" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"width":"43%"} -->
-<div class="wp-block-column" style="flex-basis:43%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
-<p class="ikizler-section-label has-rosewood-color has-text-color">Haftalik Program</p>
+<!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-schedule-shell","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","right":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl","left":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-commercial-section ikizler-schedule-shell" style="padding-top:var(--wp--preset--spacing--xl);padding-right:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl);padding-left:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"width":"42%"} -->
+<div class="wp-block-column" style="flex-basis:42%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
+<p class="ikizler-section-label has-champagne-color has-text-color">Haftalik Program</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Ders saatleri velilerin kolay okuyabilecegi kadar net, markaya yakisacak kadar sade sunulur.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Ders saatleri, grup akisi ve yogunluk bilgisi kullaniciya hizli karar verdiren netlikte sunulur.</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Bu alan ilerleyen fazlarda daha detayli yonetilebilir hale getirilebilir; simdilik image-supported bir bilgi paneli olarak hizmet verir.</p>
+<!-- wp:paragraph {"textColor":"mist"} -->
+<p class="has-mist-color has-text-color">Program akisi cok fazla teknik gorunmeden, ama gercek ders ritmini hissettirecek kadar dolu ve net olmalidir.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-schedule-visual"} -->
@@ -28,8 +28,8 @@
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"57%"} -->
-<div class="wp-block-column" style="flex-basis:57%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-schedule-panel","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:column {"width":"58%"} -->
+<div class="wp-block-column" style="flex-basis:58%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-schedule-panel","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-soft-card ikizler-schedule-panel has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4,"fontSize":"md"} -->
@@ -56,8 +56,8 @@
 <hr class="wp-block-separator has-text-color has-mist-color has-alpha-channel-opacity has-mist-background-color has-background"/>
 <!-- /wp:separator -->
 
-<!-- wp:paragraph {"textColor":"rosewood","fontSize":"sm"} -->
-<p class="has-rosewood-color has-text-color has-sm-font-size">Saatler, seviye ve yas grubuna gore esnek bicimde duzenlenebilir. Guncel programi incelemek icin iletisim veya deneme dersi yonlendirmesi kullanilabilir.</p>
+<!-- wp:paragraph {"textColor":"mist","fontSize":"sm"} -->
+<p class="has-mist-color has-text-color has-sm-font-size">Saatler seviye ve yas grubuna gore kolayca guncellenebilir. Ayrintili bilgi icin iletisim ya da deneme dersi CTA'lari kullanilabilir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

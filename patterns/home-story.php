@@ -8,19 +8,19 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-story-shell","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide ikizler-editorial-section ikizler-story-shell" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
+<!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-story-shell","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-commercial-section ikizler-story-shell" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:42%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
 <p class="ikizler-section-label has-rosewood-color has-text-color">Akademi Hikayesi</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Ailelere guven, ogrencilere ilham ve markaya rafine bir durus kazandiran bir egitim anlayisi.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Yalnizca estetik gorunen degil, velinin guvenebilecegi kadar duzenli bir bale egitimi deneyimi.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Teknik gelisimi sanatsal duyarlilik ve duzenli akademi disipliniyle birlestiren yapi, ilk dersten itibaren daha sakin, daha profesyonel ve daha net bir deneyim sunar.</p>
+<p>Akademi, teknik gelisimi sahne disiplini, veli iletisimi ve ogrenci motivasyonuyla birlikte ele alir. Bu nedenle sayfa dili de daha acik, daha dolu ve daha guven veren sekilde yeniden kurgulandi.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -30,8 +30,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-story-frame","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:58%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-story-frame","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-soft-card ikizler-story-frame has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-story-figure","style":{"border":{"radius":"34px"}}} -->
 <figure class="wp-block-image size-large ikizler-story-figure has-custom-border"><img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Bale studiounda egitim alani" style="border-radius:34px"/></figure>
 <!-- /wp:image -->
@@ -46,11 +46,11 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"backgroundColor":"surface","className":"ikizler-story-note","style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-story-note has-surface-background-color has-background" style="border-radius:24px;padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
-<p class="ikizler-section-label has-plum-color has-text-color">Yaklasim</p>
+<p class="ikizler-section-label has-plum-color has-text-color">Neden Biz</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Kucuk gruplar, guclu iletisim ve gorsel olarak da guven veren bir studyo deneyimi.</p>
+<p>Kucuk gruplar, gorunur program mantigi ve velinin rahat karar verebildigi net iletisim adimlari.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

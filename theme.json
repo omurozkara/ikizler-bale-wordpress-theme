@@ -9,42 +9,52 @@
 			"palette": [
 				{
 					"slug": "canvas",
-					"color": "#fdf8fc",
-					"name": "Blush Ivory"
+					"color": "#fbf8f4",
+					"name": "Warm Ivory"
 				},
 				{
 					"slug": "surface",
-					"color": "#f5ebf4",
-					"name": "Petal Veil"
+					"color": "#f5ede7",
+					"name": "Soft Blush"
 				},
 				{
 					"slug": "mist",
-					"color": "#ddcbdb",
+					"color": "#dccfd7",
 					"name": "Muted Lilac"
 				},
 				{
 					"slug": "blush",
-					"color": "#d6abbd",
+					"color": "#d9b2bb",
 					"name": "Dusty Rose"
 				},
 				{
+					"slug": "apricot",
+					"color": "#efb37c",
+					"name": "Soft Apricot"
+				},
+				{
 					"slug": "mauve",
-					"color": "#b889a4",
+					"color": "#9f778e",
 					"name": "Soft Mauve"
 				},
 				{
+					"slug": "rosewood",
+					"color": "#7a4e5e",
+					"name": "Rosewood"
+				},
+				{
 					"slug": "plum",
-					"color": "#5c314e",
+					"color": "#4a233f",
 					"name": "Deep Plum"
 				},
 				{
 					"slug": "ink",
-					"color": "#1f1620",
+					"color": "#171116",
 					"name": "Ink"
 				},
 				{
 					"slug": "champagne",
-					"color": "#efd9c8",
+					"color": "#f3e0cd",
 					"name": "Champagne"
 				},
 				{
@@ -57,17 +67,17 @@
 				{
 					"slug": "hero-aura",
 					"name": "Hero Aura",
-					"gradient": "linear-gradient(135deg, #fffafc 0%, #f7edf5 32%, #ecd9e7 68%, #e0c1d4 100%)"
+					"gradient": "linear-gradient(135deg, #fbf8f4 0%, #f7eee7 28%, #f1ddd2 62%, #e5c5c8 100%)"
 				},
 				{
 					"slug": "soft-radial",
 					"name": "Soft Radial",
-					"gradient": "radial-gradient(circle at top left, #ffffff 0%, #f7eef5 42%, #f0e4ee 100%)"
+					"gradient": "radial-gradient(circle at top left, #ffffff 0%, #f8f1eb 42%, #efdfdf 100%)"
 				},
 				{
 					"slug": "editorial-haze",
 					"name": "Editorial Haze",
-					"gradient": "linear-gradient(145deg, #1f1620 0%, #4a2940 40%, #714961 100%)"
+					"gradient": "linear-gradient(145deg, #171116 0%, #402236 38%, #71505a 100%)"
 				}
 			]
 		},
@@ -133,17 +143,17 @@
 				},
 				{
 					"slug": "lg",
-					"size": "4.5rem",
+					"size": "3.5rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "7rem",
+					"size": "5rem",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "9.75rem",
+					"size": "6.5rem",
 					"name": "2XL"
 				}
 			],
@@ -190,24 +200,24 @@
 				},
 				{
 					"slug": "lg",
-					"size": "1.375rem",
+					"size": "1.25rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(2.2rem, 2.8vw, 2.75rem)",
+					"size": "clamp(2rem, 2.2vw, 2.5rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "clamp(3.5rem, 4.8vw, 4.25rem)",
+					"size": "clamp(3.45rem, 4.2vw, 4.3rem)",
 					"name": "2XL"
 				}
 			],
 			"lineHeight": true
 		},
 		"blocks": {
-			"core/button": {
+				"core/button": {
 				"border": {
 					"radius": "999px"
 				},
@@ -219,18 +229,18 @@
 						"left": "1.55rem"
 					}
 				},
-				"typography": {
-					"fontSize": "0.92rem",
-					"fontWeight": "700",
-					"letterSpacing": "0.04em"
-				}
-			},
-			"core/navigation": {
-				"typography": {
-					"fontSize": "0.95rem",
-					"fontWeight": "600",
-					"letterSpacing": "0.03em"
-				}
+					"typography": {
+						"fontSize": "0.9rem",
+						"fontWeight": "700",
+						"letterSpacing": "0.03em"
+					}
+				},
+				"core/navigation": {
+					"typography": {
+						"fontSize": "0.93rem",
+						"fontWeight": "600",
+						"letterSpacing": "0.03em"
+					}
 			},
 			"core/post-title": {
 				"typography": {
@@ -256,14 +266,14 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
 					"fontWeight": "600",
-					"lineHeight": "0.94"
+					"lineHeight": "0.96"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)",
 					"fontWeight": "600",
-					"lineHeight": "0.98"
+					"lineHeight": "1.02"
 				}
 			},
 			"h3": {

@@ -8,21 +8,21 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-blog-grid","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide ikizler-editorial-section ikizler-blog-grid" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"bottom"} -->
-<div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"55%"} -->
-<div class="wp-block-column" style="flex-basis:55%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
+<!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-blog-grid","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-commercial-section ikizler-blog-grid" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"bottom"} -->
+<div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"54%"} -->
+<div class="wp-block-column" style="flex-basis:54%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
 <p class="ikizler-section-label has-rosewood-color has-text-color">Blog / Duyurular</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Velilere yol gosteren, akademi guncellemelerini duyuran ve guven olusturan bir icerik alani.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Duyurular, etkinlik haberleri ve veli odakli icerikleri daha duzenli gosteren bilgi alani.</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"45%"} -->
-<div class="wp-block-column" style="flex-basis:45%"><!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Bu alan; duyurular, etkinlik haberleri ve velileri bilgilendiren daha kisa editoryal icerikler icin hazirlandi.</p>
+<!-- wp:column {"width":"46%"} -->
+<div class="wp-block-column" style="flex-basis:46%"><!-- wp:paragraph {"textColor":"rosewood"} -->
+<p class="has-rosewood-color has-text-color">Bu bolum blog hissinden cok, akademinin aktif ve guven veren bir duyuru merkezi gibi davranir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -34,7 +34,7 @@
 
 <!-- wp:post-title {"isLink":true,"fontSize":"lg"} /-->
 
-<!-- wp:post-excerpt {"moreText":"Devami","excerptLength":14} /--></div>
+<!-- wp:post-excerpt {"moreText":"Devami","excerptLength":12} /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template --></div>
 <!-- /wp:query --></div>

@@ -9,15 +9,15 @@
  */
 
 $hero_badge          = ikizler_bale_get_front_page_field( 'hero_ust_etiket', 'Ozel Ikizler Bale Akademi' );
-$hero_title          = ikizler_bale_get_front_page_field( 'hero_baslik', 'Sanatin zarafetini guvenli ve premium bir egitim deneyimiyle bulusturun.' );
-$hero_description    = ikizler_bale_get_front_page_field( 'hero_aciklama', 'Cocuklar, gencler ve yetiskinler icin estetik, disiplinli ve ilham veren bale programlari.' );
+$hero_title          = ikizler_bale_get_front_page_field( 'hero_baslik', 'Bale egitimini guven veren, daha canli ve daha profesyonel bir akademi deneyimine donusturun.' );
+$hero_description    = ikizler_bale_get_front_page_field( 'hero_aciklama', 'Cocuklar, gencler ve yetiskinler icin teknik gelisim, sahne disiplini ve estetik durusu bir araya getiren programlar.' );
 $primary_label       = ikizler_bale_get_front_page_field( 'hero_birincil_buton_metin', 'Deneme Dersi Basvurusu' );
 $primary_url         = ikizler_bale_get_trial_lesson_url( (string) ikizler_bale_get_front_page_field( 'hero_birincil_buton_link', '' ) );
 $secondary_label     = ikizler_bale_get_front_page_field( 'hero_ikincil_buton_metin', 'Programlari Incele' );
 $secondary_url       = ikizler_bale_get_programs_url( (string) ikizler_bale_get_front_page_field( 'hero_ikincil_buton_link', '' ) );
-$hero_card_title     = ikizler_bale_get_front_page_field( 'hero_kart_basligi', 'Akademi Yaklasimi' );
-$hero_card_desc      = ikizler_bale_get_front_page_field( 'hero_kart_aciklamasi', 'Estetik, disiplin ve bireysel gelisim odakli ders tasarimi.' );
-$hero_card_highlight = ikizler_bale_get_front_page_field( 'hero_kart_vurgu', "2010'dan beri" );
+$hero_card_title     = ikizler_bale_get_front_page_field( 'hero_kart_basligi', 'Hizli Bilgi Alin' );
+$hero_card_desc      = ikizler_bale_get_front_page_field( 'hero_kart_aciklamasi', 'Program secimi, uygun yas grubu ve ders saatleri icin hizli yonlendirme.' );
+$hero_card_highlight = ikizler_bale_get_front_page_field( 'hero_kart_vurgu', 'Deneme dersi ile baslayin' );
 $hero_child_title    = ikizler_bale_get_front_page_field( 'hero_cocuk_baslik', 'Cocuk' );
 $hero_child_text     = ikizler_bale_get_front_page_field( 'hero_cocuk_aciklama', 'Temel durus, ritim ve sahne guveni odakli yapilandirilmis programlar.' );
 $hero_youth_title    = ikizler_bale_get_front_page_field( 'hero_genclik_baslik', 'Genclik' );
@@ -26,10 +26,10 @@ $hero_adult_title    = ikizler_bale_get_front_page_field( 'hero_yetiskin_baslik'
 $hero_adult_text     = ikizler_bale_get_front_page_field( 'hero_yetiskin_aciklama', 'Baslangic ve ileri seviye katilimcilar icin sakin, destekleyici ders akislari.' );
 $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=1400&q=80', 'Bale ogrencisi prova aninda' );
 ?>
-<!-- wp:group {"align":"full","className":"ikizler-hero-shell","gradient":"hero-aura","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull ikizler-hero-shell has-hero-aura-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--2xl)"><!-- wp:columns {"align":"wide","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"53%","className":"ikizler-hero-copy"} -->
-<div class="wp-block-column is-vertically-aligned-center ikizler-hero-copy" style="flex-basis:53%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<!-- wp:group {"align":"full","className":"ikizler-hero-shell","gradient":"hero-aura","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull ikizler-hero-shell has-hero-aura-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"align":"wide","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"48%","className":"ikizler-hero-copy"} -->
+<div class="wp-block-column is-vertically-aligned-center ikizler-hero-copy" style="flex-basis:48%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
 <p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_badge ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -51,8 +51,8 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:columns {"className":"ikizler-hero-audience","style":{"spacing":{"margin":{"top":"var:preset|spacing|lg"},"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
-<div class="wp-block-columns ikizler-hero-audience" style="margin-top:var(--wp--preset--spacing--lg)"><!-- wp:column -->
+<!-- wp:columns {"className":"ikizler-hero-audience","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
+<div class="wp-block-columns ikizler-hero-audience" style="margin-top:var(--wp--preset--spacing--md)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
 <p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_child_title ); ?></p>
 <!-- /wp:paragraph -->
@@ -81,11 +81,31 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <p><?php echo esc_html( $hero_adult_text ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"className":"ikizler-hero-quickproof","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
+<div class="wp-block-columns ikizler-hero-quickproof"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<strong>Kucuk Gruplar</strong><span>Daha yakindan takip edilen ders yapisi.</span>
+<!-- /wp:html --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<strong>Veli Iletisimi</strong><span>Sureci netlestiren guven veren yonlendirme.</span>
+<!-- /wp:html --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<strong>Sahne Odagi</strong><span>Teknik kadar zarafeti de gelistiren deneyim.</span>
+<!-- /wp:html --></div>
+<!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"47%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:47%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
+<!-- wp:column {"verticalAlignment":"center","width":"52%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:52%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-soft-card ikizler-hero-media-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"36px"}}} -->
 <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( $hero_image['url'] ); ?>" alt="<?php echo esc_attr( $hero_image['alt'] ); ?>" style="border-radius:36px"/></figure>
 <!-- /wp:image -->
@@ -101,7 +121,13 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 
 <!-- wp:paragraph {"textColor":"plum","fontSize":"lg"} -->
 <p class="has-plum-color has-text-color has-lg-font-size"><?php echo esc_html( $hero_card_highlight ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"plum","textColor":"white"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-plum-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( $primary_url ); ?>">Bilgi Alin</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
