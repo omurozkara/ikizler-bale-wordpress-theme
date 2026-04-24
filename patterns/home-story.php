@@ -8,30 +8,54 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"wide","className":"ikizler-editorial-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide ikizler-editorial-section" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"44%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:44%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-story-figure"} -->
-<figure class="wp-block-image size-large ikizler-story-figure"><img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Bale studiounda egitim alani"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"56%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:56%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
+<!-- wp:group {"align":"wide","className":"ikizler-editorial-section ikizler-story-shell","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-editorial-section ikizler-story-shell" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
 <p class="ikizler-section-label has-rosewood-color has-text-color">Akademi Hikayesi</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Ailelerin guvenle tercih ettigi, ogrencilerin ise ilhamla bag kurdugu bir egitim ortami.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Ailelere guven, ogrencilere ilham ve markaya rafine bir durus kazandiran bir egitim anlayisi.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Ozel Ikizler Bale Akademi, teknik gelisimi sanat duyarliligi ve duzenli egitim disipliniyle bir araya getiren kurumsal bir bale okuludur.</p>
+<p>Teknik gelisimi sanatsal duyarlilik ve duzenli akademi disipliniyle birlestiren yapi, ilk dersten itibaren daha sakin, daha profesyonel ve daha net bir deneyim sunar.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Veliler icin guven verici, ogrenciler icin motive edici ve marka acisindan premium bir ilk izlenim olusturmayi hedefler.</p>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"plum","textColor":"white"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-plum-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( ikizler_bale_get_contact_url() ); ?>">Akademiyi Kesfedin</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-story-frame","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-soft-card ikizler-story-frame has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-story-figure","style":{"border":{"radius":"34px"}}} -->
+<figure class="wp-block-image size-large ikizler-story-figure has-custom-border"><img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Bale studiounda egitim alani" style="border-radius:34px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:columns {"className":"ikizler-story-microgrid","style":{"spacing":{"margin":{"top":"var:preset|spacing|sm"},"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
+<div class="wp-block-columns ikizler-story-microgrid" style="margin-top:var(--wp--preset--spacing--sm)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image {"sizeSlug":"medium","linkDestination":"none","style":{"border":{"radius":"24px"}}} -->
+<figure class="wp-block-image size-medium has-custom-border"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Genclik bale dersi" style="border-radius:24px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"backgroundColor":"surface","className":"ikizler-story-note","style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-story-note has-surface-background-color has-background" style="border-radius:24px;padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<p class="ikizler-section-label has-plum-color has-text-color">Yaklasim</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kucuk gruplar, guclu iletisim ve gorsel olarak da guven veren bir studyo deneyimi.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
