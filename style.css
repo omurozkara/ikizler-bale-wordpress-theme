@@ -52,7 +52,7 @@ textarea {
 }
 
 .wp-site-blocks p {
-	max-width: 56ch;
+	max-width: 60ch;
 }
 
 p {
@@ -93,10 +93,10 @@ a {
 }
 
 .ikizler-section-label {
-	margin-bottom: 0.7rem;
-	font-size: 0.74rem;
+	margin-bottom: 0.55rem;
+	font-size: 0.72rem;
 	font-weight: 800;
-	letter-spacing: 0.16em;
+	letter-spacing: 0.14em;
 	text-transform: uppercase;
 }
 
@@ -107,7 +107,7 @@ a {
 	height: 100%;
 	overflow: hidden;
 	border: 1px solid var(--ikizler-border);
-	border-radius: 30px;
+	border-radius: 26px;
 	background: rgba(255, 255, 255, 0.92);
 	box-shadow: var(--ikizler-shadow-soft);
 }
@@ -127,19 +127,19 @@ a {
 }
 
 .ikizler-commercial-section > .wp-block-columns:first-child {
-	margin-bottom: 2.4rem;
+	margin-bottom: 1.45rem;
 }
 
 .ikizler-commercial-section h2,
 .ikizler-commercial-section .wp-block-heading.has-xl-font-size {
-	max-width: 14ch;
+	max-width: 11.25ch;
 	text-wrap: balance;
 }
 
 .ikizler-commercial-section > .wp-block-columns:first-child p:last-child {
-	max-width: 42ch;
-	font-size: 0.96rem;
-	line-height: 1.62;
+	max-width: 46ch;
+	font-size: 0.92rem;
+	line-height: 1.58;
 }
 
 .ikizler-topbar-shell {
@@ -176,8 +176,8 @@ a {
 }
 
 .ikizler-header-inner {
-	min-height: 82px;
-	gap: 1.5rem;
+	min-height: 76px;
+	gap: 1.25rem;
 }
 
 .ikizler-brand-render {
@@ -195,7 +195,7 @@ a {
 .ikizler-brand-render__title {
 	display: inline-block;
 	font-family: var(--wp--preset--font-family--display);
-	font-size: clamp(1.24rem, 1.3vw, 1.48rem);
+	font-size: clamp(1.16rem, 1.1vw, 1.34rem);
 	font-weight: 600;
 	line-height: 0.98;
 	text-decoration: none;
@@ -215,14 +215,14 @@ a {
 }
 
 .ikizler-main-nav .wp-block-navigation__container {
-	column-gap: 1.3rem;
+	column-gap: 1.15rem;
 	justify-content: center;
 }
 
 .ikizler-main-nav .wp-block-navigation-item__content {
 	position: relative;
 	padding: 0.2rem 0;
-	font-size: 0.93rem;
+	font-size: 0.9rem;
 	color: var(--wp--preset--color--ink);
 }
 
@@ -257,9 +257,9 @@ a {
 }
 
 .ikizler-header-actions .wp-element-button {
-	min-width: 150px;
-	font-size: 0.88rem;
-	padding-inline: 1.25rem;
+	min-width: 142px;
+	font-size: 0.84rem;
+	padding-inline: 1.1rem;
 }
 
 .ikizler-header-actions .wp-block-button:first-child .wp-element-button {
@@ -306,23 +306,23 @@ a {
 }
 
 .ikizler-hero-copy {
-	max-width: 620px;
+	max-width: 560px;
 }
 
 .ikizler-hero-copy .wp-block-heading {
-	max-width: 10.5ch;
-	margin-bottom: 1rem;
+	max-width: 8.4ch;
+	margin-bottom: 0.8rem;
 	text-wrap: balance;
 }
 
 .ikizler-hero-copy .has-md-font-size {
-	max-width: 46ch;
-	font-size: clamp(1rem, 1.1vw, 1.12rem) !important;
-	line-height: 1.66;
+	max-width: 42ch;
+	font-size: clamp(0.98rem, 0.95vw, 1.06rem) !important;
+	line-height: 1.6;
 }
 
 .ikizler-hero-copy .wp-block-buttons {
-	margin-top: 1.3rem;
+	margin-top: 1rem;
 }
 
 .ikizler-hero-copy .wp-block-button:first-child .wp-element-button {
@@ -366,14 +366,14 @@ a {
 .ikizler-hero-media-card img {
 	display: block;
 	width: 100%;
-	min-height: 720px;
+	min-height: 660px;
 	object-fit: cover;
 }
 
 .ikizler-hero-overlay-card {
 	position: relative;
-	margin: -3.9rem 1rem 0 auto;
-	max-width: 320px;
+	margin: -3rem 1rem 0 auto;
+	max-width: 300px;
 	border: 1px solid rgba(77, 36, 63, 0.1);
 	box-shadow: var(--ikizler-shadow-lifted);
 }
@@ -395,7 +395,7 @@ a {
 
 .ikizler-hero-quickproof .wp-block-column {
 	padding: 1rem 1.05rem;
-	border-radius: 22px;
+	border-radius: 18px;
 	border: 1px solid rgba(77, 36, 63, 0.09);
 	background: rgba(255, 255, 255, 0.86);
 	box-shadow: var(--ikizler-shadow-soft);
@@ -497,7 +497,7 @@ a {
 .ikizler-schedule-shell {
 	background:
 		linear-gradient(135deg, rgba(33, 20, 29, 0.98) 0%, rgba(77, 36, 63, 0.98) 44%, rgba(140, 95, 115, 0.96) 100%);
-	border-radius: 42px;
+	border-radius: 34px;
 	box-shadow: var(--ikizler-shadow-dramatic);
 	overflow: hidden;
 }
@@ -521,7 +521,7 @@ a {
 
 .ikizler-schedule-visual img {
 	height: 100%;
-	min-height: 540px;
+	min-height: 500px;
 	aspect-ratio: 5 / 6;
 }
 
@@ -575,8 +575,8 @@ a {
 }
 
 .ikizler-gallery-grid img {
-	min-height: 270px;
-	border-radius: 24px;
+	min-height: 230px;
+	border-radius: 20px;
 }
 
 .ikizler-parent-trust-shell .ikizler-feature-panel {
@@ -638,7 +638,7 @@ a {
 }
 
 .ikizler-cta-shell .wp-block-heading {
-	max-width: 12ch;
+	max-width: 11ch;
 	text-wrap: balance;
 }
 
@@ -684,12 +684,12 @@ a {
 }
 
 .ikizler-footer-intro h2 {
-	max-width: 13ch;
+	max-width: 11ch;
 	margin-bottom: 0;
 }
 
 .ikizler-footer-columns {
-	gap: 2rem;
+	gap: 1.6rem;
 }
 
 .ikizler-footer-intro {
@@ -750,28 +750,28 @@ a {
 @media (min-width: 1280px) {
 	.wp-site-blocks .alignwide,
 	.wp-site-blocks [data-align="wide"] {
-		max-width: 1560px;
+		max-width: 1680px;
 	}
 
 	.wp-site-blocks .alignfull .alignwide,
 	.wp-site-blocks .alignfull [data-align="wide"] {
-		max-width: 1660px;
+		max-width: 1780px;
 	}
 }
 
 @media (max-width: 1200px) {
 	.ikizler-hero-media-card img {
-		min-height: 600px;
+		min-height: 560px;
 	}
 
 	.ikizler-schedule-visual img {
-		min-height: 440px;
+		min-height: 400px;
 	}
 }
 
 @media (max-width: 1024px) {
 	.ikizler-header-inner {
-		min-height: 74px;
+		min-height: 70px;
 	}
 
 	.ikizler-main-nav .wp-block-navigation__container {
@@ -779,7 +779,7 @@ a {
 	}
 
 	.ikizler-hero-media-card img {
-		min-height: 500px;
+		min-height: 460px;
 	}
 
 	.ikizler-hero-overlay-card {
@@ -863,19 +863,19 @@ a {
 }
 
 .ikizler-commercial-section > .wp-block-columns:first-child {
-	margin-bottom: clamp(2rem, 3vw, 3.25rem);
+	margin-bottom: clamp(1.2rem, 2vw, 1.8rem);
 }
 
 .ikizler-commercial-section > .wp-block-columns:first-child p:last-child {
 	max-width: 48ch;
-	font-size: 1rem;
-	line-height: 1.7;
+	font-size: 0.93rem;
+	line-height: 1.6;
 }
 
 .ikizler-feature-panel,
 .ikizler-soft-card,
 .ikizler-grid-card {
-	border-radius: 34px;
+	border-radius: 24px;
 }
 
 .ikizler-topbar-shell {
@@ -900,45 +900,51 @@ a {
 }
 
 .ikizler-header-inner {
-	min-height: 88px;
+	min-height: 78px;
 }
 
 .ikizler-main-nav .wp-block-navigation__container {
-	column-gap: 1.55rem;
+	column-gap: 1.2rem;
 }
 
 .ikizler-main-nav .wp-block-navigation-item__content {
-	font-size: 0.96rem;
+	font-size: 0.9rem;
 }
 
 .ikizler-header-actions .wp-element-button {
-	min-width: 164px;
+	min-width: 148px;
 }
 
 .ikizler-hero-shell {
-	padding-top: clamp(4rem, 7vw, 6rem) !important;
-	padding-bottom: clamp(4rem, 7vw, 6rem) !important;
+	padding-top: clamp(3rem, 5vw, 4.8rem) !important;
+	padding-bottom: clamp(3rem, 5vw, 4.8rem) !important;
 }
 
 .ikizler-hero-stage {
-	border-radius: 40px;
+	border-radius: 28px;
 }
 
 .ikizler-hero-copy .wp-block-heading {
-	max-width: 9.4ch;
+	max-width: 8.1ch;
 }
 
 .ikizler-hero-copy .has-md-font-size {
 	max-width: 43ch;
-	font-size: clamp(1.02rem, 1.1vw, 1.16rem) !important;
+	font-size: clamp(0.96rem, 0.95vw, 1.04rem) !important;
 }
 
 .ikizler-hero-info-band p {
 	margin-bottom: 0;
 }
 
+.ikizler-hero-contact-ribbon p {
+	margin-bottom: 0;
+	font-size: 0.88rem;
+	line-height: 1.5;
+}
+
 .ikizler-hero-media-card img {
-	min-height: 760px;
+	min-height: 620px;
 }
 
 .ikizler-hero-overlay-card {
@@ -953,7 +959,7 @@ a {
 }
 
 .ikizler-trust-strip-shell {
-	margin-top: -2.2rem;
+	margin-top: -1.25rem;
 	margin-bottom: 0 !important;
 	z-index: 6;
 }
@@ -963,14 +969,14 @@ a {
 }
 
 .ikizler-trust-strip-shell .ikizler-grid-card {
-	padding: 1.1rem 1.15rem !important;
+	padding: 0.95rem 1rem !important;
 	background: rgba(255, 255, 255, 0.96);
 }
 
 .ikizler-trust-strip-shell p {
 	margin: 0;
-	font-size: 0.92rem;
-	line-height: 1.55;
+	font-size: 0.84rem;
+	line-height: 1.45;
 }
 
 .ikizler-story-shell .ikizler-feature-panel,
@@ -979,7 +985,7 @@ a {
 .ikizler-instructor-grid .ikizler-feature-panel,
 .ikizler-events-shell .ikizler-feature-panel,
 .ikizler-parent-trust-shell .ikizler-feature-panel {
-	padding: clamp(1rem, 1.5vw, 1.25rem) !important;
+	padding: clamp(0.8rem, 1vw, 1rem) !important;
 }
 
 .ikizler-story-figure img,
@@ -998,20 +1004,33 @@ a {
 }
 
 .ikizler-gallery-grid img {
-	min-height: 300px;
+	min-height: 220px;
+}
+
+.ikizler-events-stage .ikizler-gallery-grid {
+	grid-template-columns: 1.15fr 1fr;
+}
+
+.ikizler-events-stage .ikizler-gallery-grid img {
+	min-height: 250px;
+}
+
+.ikizler-program-support-band .wp-block-columns,
+.ikizler-hero-contact-ribbon .wp-block-columns {
+	gap: 0.9rem;
 }
 
 .ikizler-schedule-shell {
-	padding-inline: clamp(1.2rem, 2vw, 1.8rem) !important;
-	border-radius: 44px;
+	padding-inline: clamp(1rem, 1.5vw, 1.3rem) !important;
+	border-radius: 26px;
 }
 
 .ikizler-schedule-visual img {
-	min-height: 620px;
+	min-height: 420px;
 }
 
 .ikizler-parent-trust-shell .ikizler-feature-panel {
-	border-radius: 36px;
+	border-radius: 24px;
 }
 
 .ikizler-blog-grid .wp-block-post {
@@ -1038,14 +1057,25 @@ a {
 }
 
 .ikizler-cta-shell {
-	border-radius: 42px;
-	margin-top: clamp(3rem, 5vw, 5rem) !important;
-	margin-bottom: clamp(4rem, 6vw, 6rem) !important;
+	border-radius: 26px;
+	margin-top: clamp(2rem, 3vw, 3rem) !important;
+	margin-bottom: clamp(3rem, 5vw, 4rem) !important;
+}
+
+.ikizler-cta-shell ul {
+	margin: 0.2rem 0 1rem;
+	padding-left: 1.1rem;
+}
+
+.ikizler-cta-shell li {
+	margin-bottom: 0.35rem;
+	font-size: 0.9rem;
+	line-height: 1.42;
 }
 
 .ikizler-footer-shell {
-	padding-top: clamp(7rem, 9vw, 9rem) !important;
-	padding-bottom: clamp(4rem, 6vw, 5.5rem) !important;
+	padding-top: clamp(5rem, 7vw, 6.75rem) !important;
+	padding-bottom: clamp(3rem, 4vw, 4rem) !important;
 }
 
 .ikizler-footer-intro {
@@ -1053,11 +1083,11 @@ a {
 }
 
 .ikizler-footer-inner {
-	row-gap: 3.2rem;
+	row-gap: 2.4rem;
 }
 
 .ikizler-footer-columns {
-	gap: 2.35rem;
+	gap: 1.6rem;
 }
 
 .ikizler-footer-bottom {
@@ -1067,22 +1097,22 @@ a {
 @media (min-width: 1440px) {
 	.wp-site-blocks .alignwide,
 	.wp-site-blocks [data-align="wide"] {
-		max-width: 1640px;
+		max-width: 1760px;
 	}
 
 	.wp-site-blocks .alignfull .alignwide,
 	.wp-site-blocks .alignfull [data-align="wide"] {
-		max-width: 1720px;
+		max-width: 1860px;
 	}
 }
 
 @media (max-width: 1200px) {
 	.ikizler-hero-media-card img {
-		min-height: 620px;
+		min-height: 520px;
 	}
 
 	.ikizler-schedule-visual img {
-		min-height: 500px;
+		min-height: 380px;
 	}
 }
 
@@ -1107,16 +1137,20 @@ a {
 	}
 
 	.ikizler-hero-shell {
-		padding-top: 3rem !important;
-		padding-bottom: 3rem !important;
+		padding-top: 2.2rem !important;
+		padding-bottom: 2.2rem !important;
 	}
 
 	.ikizler-hero-media-card img {
-		min-height: 360px;
+		min-height: 320px;
 	}
 
 	.ikizler-trust-strip-shell {
 		margin-top: 1rem;
+	}
+
+	.ikizler-events-stage .ikizler-gallery-grid {
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.ikizler-footer-shell {

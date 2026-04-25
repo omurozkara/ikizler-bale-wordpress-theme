@@ -46,7 +46,13 @@
 
 <!-- wp:paragraph -->
 <p>Baslangici kolaylastiran, aileye guven veren ve cocugun ritim duygusunu yumusak gecislerle destekleyen ders akisi.</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"plum","textColor":"white"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-plum-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( ikizler_bale_get_programs_url() ); ?>">Programi Inceleyin</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

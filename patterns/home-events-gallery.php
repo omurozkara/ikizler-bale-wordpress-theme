@@ -28,8 +28,8 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"className":"ikizler-feature-panel","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|lifted"},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-feature-panel" style="margin-top:var(--wp--preset--spacing--md);padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:columns {"verticalAlignment":"stretch","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
+<!-- wp:group {"className":"ikizler-feature-panel ikizler-events-stage","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|lifted"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-feature-panel ikizler-events-stage" style="margin-top:var(--wp--preset--spacing--md);padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:columns {"verticalAlignment":"stretch","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-stretch"><!-- wp:column {"width":"46%"} -->
 <div class="wp-block-column" style="flex-basis:46%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-grid-card ikizler-gallery-feature","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"var:preset|spacing|md","left":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card ikizler-gallery-feature has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--md);padding-left:0"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"30px 30px 0 0"}}} -->
@@ -47,7 +47,13 @@
 
 <!-- wp:list -->
 <ul><li>Donem sonu gosterileri</li><li>Acik sinif gunleri</li><li>Mini performanslar ve atolyeler</li></ul>
-<!-- /wp:list --></div>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"plum","textColor":"white"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-plum-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( ikizler_bale_get_contact_url() ); ?>">Etkinlik Bilgisi Alin</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -64,6 +70,10 @@
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Egitim ani"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Sahne hazirligi"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"gradient":"deep-panel","className":"ikizler-grid-card","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|md","right":"var:preset|spacing|md","bottom":"var:preset|spacing|md","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->

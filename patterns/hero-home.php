@@ -52,35 +52,35 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:group {"gradient":"deep-panel","className":"ikizler-grid-card ikizler-hero-info-band","textColor":"white","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|md","right":"var:preset|spacing|md","bottom":"var:preset|spacing|md","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group ikizler-grid-card ikizler-hero-info-band has-white-color has-deep-panel-gradient-background has-text-color has-background" style="margin-top:var(--wp--preset--spacing--md);padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--md);padding-left:var(--wp--preset--spacing--md)"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
+<!-- wp:group {"backgroundColor":"surface","className":"ikizler-soft-card ikizler-hero-contact-ribbon","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-soft-card ikizler-hero-contact-ribbon has-surface-background-color has-background" style="margin-top:var(--wp--preset--spacing--md);padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
-<p class="ikizler-section-label has-champagne-color has-text-color"><?php echo esc_html( $hero_child_title ); ?></p>
+<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rose"} -->
+<p class="ikizler-section-label has-rose-color has-text-color">Hizli Baslangic</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color"><?php echo esc_html( $hero_child_text ); ?></p>
+<!-- wp:paragraph -->
+<p>Deneme dersi, uygun yas grubu ve program secimi tek noktadan hizlica yonlendirilir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
-<p class="ikizler-section-label has-champagne-color has-text-color"><?php echo esc_html( $hero_youth_title ); ?></p>
+<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rose"} -->
+<p class="ikizler-section-label has-rose-color has-text-color">Veli Guveni</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color"><?php echo esc_html( $hero_youth_text ); ?></p>
+<!-- wp:paragraph -->
+<p>Surec, saatler ve iletisim adimlari net oldugu icin karar vermek kolaylasir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
-<p class="ikizler-section-label has-champagne-color has-text-color"><?php echo esc_html( $hero_adult_title ); ?></p>
+<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rose"} -->
+<p class="ikizler-section-label has-rose-color has-text-color">Sahne ve Disiplin</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color"><?php echo esc_html( $hero_adult_text ); ?></p>
+<!-- wp:paragraph -->
+<p>Teknik gelisim, zarafet ve sahne bilinci birlikte ilerleyen kurumsal egitim.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

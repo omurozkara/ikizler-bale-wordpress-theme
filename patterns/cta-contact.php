@@ -42,6 +42,14 @@ $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_
 <p class="has-md-font-size"><?php echo esc_html( $cta_description ); ?></p>
 <!-- /wp:paragraph -->
 
+<!-- wp:paragraph {"className":"ikizler-section-label","textColor":"mauve"} -->
+<p class="ikizler-section-label has-mauve-color has-text-color">Hizli Basvuru Akisi</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Deneme dersi icin ilk adimi atin</li><li>Uygun grubu birlikte netlestirelim</li><li>Iletisim ve saat bilgisini tek alandan alin</li></ul>
+<!-- /wp:list -->
+
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"plum","textColor":"white"} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-white-color has-plum-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( $cta_primary_url ); ?>"><?php echo esc_html( $cta_primary_label ); ?></a></div>

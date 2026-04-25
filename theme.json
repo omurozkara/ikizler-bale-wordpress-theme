@@ -103,13 +103,13 @@
 				"pill": "999px"
 			},
 			"spacing": {
-					"content": "min(1420px, calc(100vw - 44px))",
-					"wide": "min(1720px, calc(100vw - 44px))"
+				"content": "min(1480px, calc(100vw - 36px))",
+				"wide": "min(1800px, calc(100vw - 36px))"
 			}
 		},
 		"layout": {
-			"contentSize": "1040px",
-			"wideSize": "1560px"
+			"contentSize": "1120px",
+			"wideSize": "1660px"
 		},
 		"shadow": {
 			"defaultPresets": false,
@@ -220,12 +220,12 @@
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(2.1rem, 2.5vw, 3rem)",
+					"size": "clamp(1.95rem, 2.15vw, 2.55rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "clamp(3.25rem, 4.3vw, 4.25rem)",
+					"size": "clamp(2.8rem, 3.4vw, 3.85rem)",
 					"name": "2XL"
 				}
 			],
@@ -312,8 +312,8 @@
 		"spacing": {
 			"blockGap": "1.35rem",
 			"padding": {
-				"left": "20px",
-				"right": "20px"
+				"left": "18px",
+				"right": "18px"
 			}
 		},
 		"typography": {
