@@ -9,22 +9,22 @@
 			"palette": [
 				{
 					"slug": "canvas",
-					"color": "#f7f2ec",
+					"color": "#faf3f5",
 					"name": "Warm Canvas"
 				},
 				{
 					"slug": "surface",
-					"color": "#fffaf6",
+					"color": "#fff9fa",
 					"name": "Soft Surface"
 				},
 				{
 					"slug": "blush",
-					"color": "#f0dfd9",
+					"color": "#f6ecef",
 					"name": "Warm Blush"
 				},
 				{
 					"slug": "lilac",
-					"color": "#ddd3de",
+					"color": "#ead6de",
 					"name": "Muted Lilac"
 				},
 				{
@@ -34,12 +34,12 @@
 				},
 				{
 					"slug": "rose",
-					"color": "#bb7b86",
+					"color": "#b98398",
 					"name": "Dusty Rose"
 				},
 				{
 					"slug": "apricot",
-					"color": "#dfa166",
+					"color": "#d7b2c1",
 					"name": "Apricot Accent"
 				},
 				{
@@ -49,17 +49,17 @@
 				},
 				{
 					"slug": "mauve",
-					"color": "#846273",
+					"color": "#8c5a72",
 					"name": "Muted Mauve"
 				},
 				{
 					"slug": "plum",
-					"color": "#4d243f",
+					"color": "#6b3d53",
 					"name": "Deep Plum"
 				},
 				{
 					"slug": "night",
-					"color": "#21141d",
+					"color": "#2d1b27",
 					"name": "Night Plum"
 				},
 				{
@@ -77,12 +77,12 @@
 				{
 					"slug": "hero-glow",
 					"name": "Hero Glow",
-					"gradient": "linear-gradient(135deg, #f7f2ec 0%, #f1e2da 34%, #e6d4d7 68%, #d3c3d8 100%)"
+					"gradient": "linear-gradient(135deg, #fff9fa 0%, #f6ecef 32%, #f1e1e7 68%, #ead6de 100%)"
 				},
 				{
 					"slug": "soft-panel",
 					"name": "Soft Panel",
-					"gradient": "linear-gradient(180deg, #fffaf6 0%, #f5ede7 100%)"
+					"gradient": "linear-gradient(180deg, #fff9fa 0%, #f6ecef 100%)"
 				},
 				{
 					"slug": "soft-radial",
@@ -103,13 +103,13 @@
 				"pill": "999px"
 			},
 			"spacing": {
-				"content": "min(1360px, calc(100vw - 48px))",
-				"wide": "min(1640px, calc(100vw - 48px))"
+					"content": "min(1420px, calc(100vw - 44px))",
+					"wide": "min(1720px, calc(100vw - 44px))"
 			}
 		},
 		"layout": {
-			"contentSize": "980px",
-			"wideSize": "1480px"
+			"contentSize": "1040px",
+			"wideSize": "1560px"
 		},
 		"shadow": {
 			"defaultPresets": false,
@@ -158,17 +158,17 @@
 				},
 				{
 					"slug": "lg",
-					"size": "3.75rem",
+					"size": "4rem",
 					"name": "LG"
 				},
 				{
 					"slug": "xl",
-					"size": "5.5rem",
+					"size": "5.75rem",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "7rem",
+					"size": "7.5rem",
 					"name": "2XL"
 				}
 			],
@@ -220,12 +220,12 @@
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(2.05rem, 2.4vw, 2.8rem)",
+					"size": "clamp(2.1rem, 2.5vw, 3rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "2xl",
-					"size": "clamp(3.1rem, 4vw, 4rem)",
+					"size": "clamp(3.25rem, 4.3vw, 4.25rem)",
 					"name": "2XL"
 				}
 			],
@@ -312,8 +312,8 @@
 		"spacing": {
 			"blockGap": "1.35rem",
 			"padding": {
-				"left": "24px",
-				"right": "24px"
+				"left": "20px",
+				"right": "20px"
 			}
 		},
 		"typography": {

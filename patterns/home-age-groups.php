@@ -8,8 +8,8 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"full","backgroundColor":"blush","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-blush-background-color has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-age-grid","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","gradient":"soft-panel","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-soft-panel-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-age-grid","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide ikizler-commercial-section ikizler-age-grid"><!-- wp:columns {"verticalAlignment":"bottom"} -->
 <div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"56%"} -->
 <div class="wp-block-column" style="flex-basis:56%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rose"} -->
@@ -17,13 +17,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Her yas grubunu ayri ama guclu bloklarla anlatan daha net bir yerlesim.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Cocuk, genc ve yetiskin ogrencilerin kendi yolunu daha kolay buldugu segment yapisi.</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"44%"} -->
 <div class="wp-block-column" style="flex-basis:44%"><!-- wp:paragraph {"textColor":"mauve"} -->
-<p class="has-mauve-color has-text-color">Cocuk, genc ve yetiskin segmentleri birbirinden belirgin ayrildigi icin kullanici kendine uygun akisi ilk bakista bulabilir.</p>
+<p class="has-mauve-color has-text-color">Her yas grubu farkli beklenti, enerji ve teknik ihtiyac tasidigi icin bu alan daha buyuk ve daha net modullerle kurgulandi.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

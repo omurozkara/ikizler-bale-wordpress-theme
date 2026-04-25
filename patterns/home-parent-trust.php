@@ -17,11 +17,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Velilerin sureci rahat anlayabildigi, ogrencinin ise duzenli ilerledigini hissettiren net bir sistem.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Velinin "surec nasil isliyor?" sorusuna tek bakista cevap veren daha net bir guven alani.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"mauve"} -->
-<p class="has-mauve-color has-text-color">Program secimi, ders ritmi, iletisim hizi ve takip duzeni birlikte dusunuldugunde ailelerin karar vermesi kolaylasir ve okul guveni artar.</p>
+<p class="has-mauve-color has-text-color">Program secimi, ders ritmi, iletisim hizi ve takip duzeni tek yerde anlatildiginda ailelerin karar vermesi daha kolay ve daha guvenli hale gelir.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-parent-trust-visual","style":{"border":{"radius":"28px"}}} -->
@@ -44,7 +44,7 @@
 <div class="wp-block-columns ikizler-parent-trust-metrics" style="margin-top:var(--wp--preset--spacing--md)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:paragraph -->
-<p><strong>3</strong>yas segmenti</p>
+<p><strong>3</strong> yas segmenti</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -52,7 +52,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:paragraph -->
-<p><strong>Duzenli</strong>haftalik akis</p>
+<p><strong>Duzenli</strong> haftalik akis</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -60,7 +60,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:paragraph -->
-<p><strong>Net</strong>iletisim kanali</p>
+<p><strong>Net</strong> iletisim kanali</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -68,7 +68,7 @@
 
 <!-- wp:group {"backgroundColor":"surface","className":"ikizler-grid-card","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|md","right":"var:preset|spacing|md","bottom":"var:preset|spacing|md","left":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card has-surface-background-color has-background" style="margin-top:var(--wp--preset--spacing--md);padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--md);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph -->
-<p>Bu bolum, velinin “hangi programa uygun, nasil iletisim kurarim, surec ne kadar net?” sorularina tek yerde cevap verir.</p>
+<p>Bu bolum, velinin "hangi programa uygun, nasil iletisim kurarim, surec ne kadar net?" sorularina tek yerde cevap verir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

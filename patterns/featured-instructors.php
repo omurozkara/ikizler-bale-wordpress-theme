@@ -17,13 +17,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Egitmen vitrini hem kurumsal guveni hem de sanatsal kaliteyi ilk bakista hissettirmeli.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Kurumsal guveni, sahne deneyimini ve ogrenciyle kurulan iletisimi ayni anda hissettiren egitmen vitrini.</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"44%"} -->
 <div class="wp-block-column" style="flex-basis:44%"><!-- wp:paragraph {"textColor":"mauve"} -->
-<p class="has-mauve-color has-text-color">Portre odakli, daha temiz ve daha buyuk bloklar ile ekip alani artik daha guven verici bir vitrine donusur.</p>
+<p class="has-mauve-color has-text-color">Velinin guven duymasi icin ekip sadece metinle degil; guclu portreler, net roller ve kaliteli kart diliyle sunulur.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

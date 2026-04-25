@@ -17,13 +17,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Sahne anlari, studyo yasami ve atolyelerle akademinin canli tarafini gosteren daha buyuk bir deneyim bolumu.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Sahne gunleri, prova duzeni ve studyo yasamini hissettiren daha canli bir deneyim alani.</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"46%"} -->
 <div class="wp-block-column" style="flex-basis:46%"><!-- wp:paragraph {"textColor":"mauve"} -->
-<p class="has-mauve-color has-text-color">Bu alan yalnizca bilgi vermez; velinin ve ogrencinin ortam kalitesini hissetmesini, okulun ritmini gormesini saglar.</p>
+<p class="has-mauve-color has-text-color">Bu section akademinin sadece ne anlattigini degil, nasil bir ortam sundugunu da gosterir; guven duygusu burada gorsellerle kurulur.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

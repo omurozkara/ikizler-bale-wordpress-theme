@@ -16,13 +16,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Programlari daha az ama daha guclu bloklarla gostererek karar vermeyi hizlandiran bir yapi.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Program secimini hizlandiran, yasi ve beklentiyi daha acik gosteren daha guclu bir program vitrini.</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"44%"} -->
 <div class="wp-block-column" style="flex-basis:44%"><!-- wp:paragraph {"textColor":"mauve"} -->
-<p class="has-mauve-color has-text-color">Yas, seviye ve beklentiye gore yapilanan ders akisi, kullanicinin nereye yonelecegini daha hizli anlamasini saglar.</p>
+<p class="has-mauve-color has-text-color">Daha buyuk ana moduller ile cocuk, genc ve yetiskin programlari sadece listelenmez; kim icin uygun oldugu ilk bakista anlasilir.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

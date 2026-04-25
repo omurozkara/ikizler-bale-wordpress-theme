@@ -16,11 +16,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Ders ritmini tek bakista anlatan daha net ve daha profesyonel bir program sunumu.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Haftalik ders akisini tablo hissine dusmeden, daha premium bir bilgi paneli olarak gosteriyoruz.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"lilac"} -->
-<p class="has-lilac-color has-text-color">Kullanici hangi gun, hangi saat ve hangi grup yapisina yonelecegini fazla teknik gorunmeden ama karar verecek kadar net bicimde gorebilmelidir.</p>
+<p class="has-lilac-color has-text-color">Kullanici hangi gun, hangi saat ve hangi grup yapisina yonelecegini uzun uzun okumadan anlayabilmeli; panel bunun icin daha net kuruldu.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"ikizler-schedule-callout","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
