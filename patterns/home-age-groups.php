@@ -8,8 +8,8 @@
  * @package IkizlerBale
  */
 ?>
-<!-- wp:group {"align":"full","backgroundColor":"surface","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-age-grid","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","backgroundColor":"blush","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-blush-background-color has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-commercial-section ikizler-age-grid","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide ikizler-commercial-section ikizler-age-grid"><!-- wp:columns {"verticalAlignment":"bottom"} -->
 <div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"width":"56%"} -->
 <div class="wp-block-column" style="flex-basis:56%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"rosewood"} -->
@@ -17,19 +17,20 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xl"} -->
-<h2 class="wp-block-heading has-xl-font-size">Her yas grubunu ayri anlatan daha duzenli, daha anlasilir ve daha guven veren bir yapi.</h2>
+<h2 class="wp-block-heading has-xl-font-size">Her yas grubunu ayri anlatan, daha net ve daha guven veren buyuk bloklar.</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"44%"} -->
 <div class="wp-block-column" style="flex-basis:44%"><!-- wp:paragraph {"textColor":"rosewood"} -->
-<p class="has-rosewood-color has-text-color">Kartlarda yas araligi, ogrenci profili ve ders karakteri birlikte gorunur; karar sureci kolaylasir.</p>
+<p class="has-rosewood-color has-text-color">Segmentler birbirinden belirgin ayrildigi icin kullanici kendi grubunu daha hizli bulur.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"blockGap":{"left":"var:preset|spacing|md"}}}} -->
-<div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--md)"><!-- wp:column {"width":"34%"} -->
+<!-- wp:group {"className":"ikizler-feature-panel","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|lifted"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-feature-panel" style="margin-top:var(--wp--preset--spacing--md);padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"34%"} -->
 <div class="wp-block-column" style="flex-basis:34%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"var:preset|spacing|md","left":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--md);padding-left:0"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"ikizler-card-media","style":{"border":{"radius":"30px 30px 0 0"}}} -->
 <figure class="wp-block-image size-large ikizler-card-media has-custom-border"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="4-6 yas bale ogrencileri" style="border-radius:30px 30px 0 0"/></figure>

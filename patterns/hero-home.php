@@ -26,10 +26,11 @@ $hero_adult_title    = ikizler_bale_get_front_page_field( 'hero_yetiskin_baslik'
 $hero_adult_text     = ikizler_bale_get_front_page_field( 'hero_yetiskin_aciklama', 'Baslangic ve ileri seviye katilimcilar icin sakin, destekleyici ders akislari.' );
 $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=1400&q=80', 'Bale ogrencisi prova aninda' );
 ?>
-<!-- wp:group {"align":"full","className":"ikizler-hero-shell","gradient":"hero-aura","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull ikizler-hero-shell has-hero-aura-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:columns {"align":"wide","verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"48%","className":"ikizler-hero-copy"} -->
-<div class="wp-block-column is-vertically-aligned-center ikizler-hero-copy" style="flex-basis:48%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<!-- wp:group {"align":"full","className":"ikizler-hero-shell","gradient":"hero-glow","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull ikizler-hero-shell has-hero-glow-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","className":"ikizler-feature-panel","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","right":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide ikizler-feature-panel" style="padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"44%","className":"ikizler-hero-copy"} -->
+<div class="wp-block-column is-vertically-aligned-center ikizler-hero-copy" style="flex-basis:44%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
 <p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_badge ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -51,61 +52,41 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:columns {"className":"ikizler-hero-audience","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
-<div class="wp-block-columns ikizler-hero-audience" style="margin-top:var(--wp--preset--spacing--md)"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
-<p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_child_title ); ?></p>
+<!-- wp:group {"className":"ikizler-hero-segments","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"},"blockGap":"12px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group ikizler-hero-segments" style="margin-top:var(--wp--preset--spacing--md)"><!-- wp:group {"className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"}}},"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group ikizler-grid-card" style="padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<p class="ikizler-section-label has-plum-color has-text-color">01 / <?php echo esc_html( $hero_child_title ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><?php echo esc_html( $hero_child_text ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
-<p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_youth_title ); ?></p>
+<!-- wp:group {"className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"}}},"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group ikizler-grid-card" style="padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<p class="ikizler-section-label has-plum-color has-text-color">02 / <?php echo esc_html( $hero_youth_title ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><?php echo esc_html( $hero_youth_text ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
-<p class="ikizler-section-label has-plum-color has-text-color"><?php echo esc_html( $hero_adult_title ); ?></p>
+<!-- wp:group {"className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"}}},"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group ikizler-grid-card" style="padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"plum"} -->
+<p class="ikizler-section-label has-plum-color has-text-color">03 / <?php echo esc_html( $hero_adult_title ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><?php echo esc_html( $hero_adult_text ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:columns {"className":"ikizler-hero-quickproof","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
-<div class="wp-block-columns ikizler-hero-quickproof"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:html -->
-<strong>Kucuk Gruplar</strong><span>Daha yakindan takip edilen ders yapisi.</span>
-<!-- /wp:html --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:html -->
-<strong>Veli Iletisimi</strong><span>Sureci netlestiren guven veren yonlendirme.</span>
-<!-- /wp:html --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:html -->
-<strong>Sahne Odagi</strong><span>Teknik kadar zarafeti de gelistiren deneyim.</span>
-<!-- /wp:html --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"52%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:52%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
+<!-- wp:column {"verticalAlignment":"center","width":"56%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:56%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-soft-card ikizler-hero-media-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|sm","right":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm","left":"var:preset|spacing|sm"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-soft-card ikizler-hero-media-card has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--sm);padding-right:var(--wp--preset--spacing--sm);padding-bottom:var(--wp--preset--spacing--sm);padding-left:var(--wp--preset--spacing--sm)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"36px"}}} -->
 <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( $hero_image['url'] ); ?>" alt="<?php echo esc_attr( $hero_image['alt'] ); ?>" style="border-radius:36px"/></figure>
 <!-- /wp:image -->
@@ -129,7 +110,28 @@ $hero_image          = ikizler_bale_get_front_page_image( 'hero_gorseli', 'https
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"className":"ikizler-hero-quickproof","style":{"spacing":{"margin":{"top":"var:preset|spacing|sm"},"blockGap":{"left":"var:preset|spacing|sm"}}}} -->
+<div class="wp-block-columns ikizler-hero-quickproof" style="margin-top:var(--wp--preset--spacing--sm)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<strong>Kucuk Gruplar</strong><span>Daha yakindan takip edilen ders yapisi.</span>
+<!-- /wp:html --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<strong>Veli Iletisimi</strong><span>Sureci netlestiren guven veren yonlendirme.</span>
+<!-- /wp:html --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<strong>Sahne Odagi</strong><span>Teknik kadar zarafeti de gelistiren deneyim.</span>
+<!-- /wp:html --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
