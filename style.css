@@ -475,6 +475,25 @@ a {
 	line-height: 1.58;
 }
 
+.ikizler-blog-grid .wp-block-query .wp-block-post-template {
+	gap: 1rem;
+}
+
+.ikizler-blog-grid .wp-block-post-featured-image img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.ikizler-blog-grid .wp-block-post-title {
+	font-size: 1.28rem;
+	line-height: 1.12;
+}
+
+.ikizler-blog-grid .wp-block-post-date {
+	display: inline-block;
+	margin-top: 0.2rem;
+}
+
 .ikizler-schedule-shell {
 	background:
 		linear-gradient(135deg, rgba(33, 20, 29, 0.98) 0%, rgba(77, 36, 63, 0.98) 44%, rgba(140, 95, 115, 0.96) 100%);
