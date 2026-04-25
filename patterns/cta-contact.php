@@ -18,8 +18,8 @@ $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_
 ?>
 <!-- wp:group {"align":"wide","className":"ikizler-soft-card ikizler-cta-shell","backgroundColor":"night","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","right":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl","left":"var:preset|spacing|xl"},"margin":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|2xl"}},"shadow":"var:preset|shadow|dramatic"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide ikizler-soft-card ikizler-cta-shell has-white-color has-night-background-color has-text-color has-background" style="margin-top:var(--wp--preset--spacing--xl);margin-bottom:var(--wp--preset--spacing--2xl);padding-top:var(--wp--preset--spacing--xl);padding-right:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl);padding-left:var(--wp--preset--spacing--xl)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"56%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:56%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:58%"><!-- wp:paragraph {"className":"ikizler-section-label","textColor":"champagne"} -->
 <p class="ikizler-section-label has-champagne-color has-text-color"><?php echo esc_html( $cta_badge ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -28,12 +28,16 @@ $cta_secondary_url   = ikizler_bale_get_schedule_url( (string) ikizler_bale_get_
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"lilac","fontSize":"sm"} -->
-<p class="has-lilac-color has-text-color has-sm-font-size">Program secimini netlestirmek, uygun ders saatini ogrenmek ve kayit surecini baslatmak icin bu final alan daha net ve daha yonlendirici bir sekilde calisir.</p>
-<!-- /wp:paragraph --></div>
+<p class="has-lilac-color has-text-color has-sm-font-size">Bilgi alma, uygun programi secme ve deneme dersi akisini baslatma ihtiyacini tek bir guclu final alanda topluyoruz.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"textColor":"white"} -->
+<ul class="has-white-color has-text-color"><li>Hangi grubun uygun oldugunu hizli netlestirin</li><li>Ders saatleri ve sureci tek noktada sorun</li><li>Deneme dersi ya da iletisim adimina dogrudan gecin</li></ul>
+<!-- /wp:list --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"44%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:44%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|md","right":"var:preset|spacing|md","bottom":"var:preset|spacing|md","left":"var:preset|spacing|md"}}},"textColor":"ink","layout":{"type":"constrained"}} -->
+<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:42%"><!-- wp:group {"backgroundColor":"white","className":"ikizler-grid-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|md","right":"var:preset|spacing|md","bottom":"var:preset|spacing|md","left":"var:preset|spacing|md"}}},"textColor":"ink","layout":{"type":"constrained"}} -->
 <div class="wp-block-group ikizler-grid-card has-white-background-color has-ink-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--md);padding-bottom:var(--wp--preset--spacing--md);padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"fontSize":"md"} -->
 <p class="has-md-font-size"><?php echo esc_html( $cta_description ); ?></p>
 <!-- /wp:paragraph -->
